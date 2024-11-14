@@ -366,10 +366,10 @@ span {
     transparent 60%,
     transparent
   );
-  background-size: 10px;
+  background-size: 5px;
   content: "";
   display: inline-block;
-  height: 10px;
+  height: 5px;
   width: 100%;
 }
 
