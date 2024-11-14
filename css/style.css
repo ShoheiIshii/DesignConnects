@@ -57,6 +57,7 @@ img {
 
 body {
   background: #f8f6f0;
+  overflow-x: hidden;
 }
 
 /*-------------------ヘッダー--------------------*/
@@ -118,9 +119,11 @@ body {
 
 .FV_content {
   display: flex;
-  padding: 164px 210px 139px 15.2%;
+  padding: 164px 0 139px;
   position: relative; /* 親要素 */
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   /* box-sizing: border-box; */
 }
 
