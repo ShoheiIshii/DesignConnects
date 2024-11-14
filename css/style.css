@@ -21,9 +21,8 @@ li {
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #40322d;
 
-  font-family: "Lato", "Gill Sans", "Open Sans", "游ゴシック体", "YuGothic",
-    "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 
   scroll-behavior: smooth;
 }
@@ -358,7 +357,8 @@ body {
 span {
   display: inline-block;
 }
-.line1 span:after {
+
+.line1 > span:after {
   background: radial-gradient(
     circle farthest-side,
     #000,
@@ -372,6 +372,10 @@ span {
   height: 10px;
   width: 100%;
 }
+
+/* .line1 > span {
+  border-bottom: 3px dotted black;
+} */
 
 #S {
   font-size: 36px;
