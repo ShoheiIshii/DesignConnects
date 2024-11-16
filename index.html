@@ -87,17 +87,17 @@
 
     <section class="onayami">
 
+        <div class="onayami_titles">
+            <span class="text_with_dots">
+                <span class="dots">・・・ </span>
 
-        <span class="text_with_dots">
-            <span class="dots">・・・ </span>
 
+                <h2 class="onayami_title">
+                    こんな<span class="color_other">お悩み</span>の方、お気軽にご相談ください。
+                </h2>
 
-            <h2 class="onayami_title">
-                こんな<span class="color_other">お悩み</span>の方、お気軽にご相談ください。
-            </h2>
-
-        </span>
-
+            </span>
+        </div>
 
         <div class="worry">
             <div class="worry_list1">
@@ -168,7 +168,10 @@
 
             <div class="items_list1">
                 <h3>Coding</h3>
-                <img src="./images/Coding.svg" alt="Coding">
+
+                <div class="items_list1b">
+                    <img src="./images/Coding.svg" alt="Coding">
+                </div>
 
                 <p>HTML / CSS / Java Script / jQuery </p>
                 <p>LPやコーポレートサイトのコーディングをします。
@@ -179,7 +182,9 @@
 
             <div class="items_list2">
                 <h3>Design</h3>
-                <img src="./images/Design.svg" alt="Design">
+                <div class="items_list2b">
+                    <img src="./images/Design.svg" alt="Design">
+                </div>
 
                 <p>Illustrator / Photoshop / Figma</p>
                 <p>HPやLP、バナー広告などのデジタルデザインから、チラシやパンフレットなどの印刷物まで制作します。
@@ -189,7 +194,10 @@
 
             <div class="items_list3">
                 <h3>Illustration</h3>
-                <img src="./images/Illustration.svg" alt="Illustration">
+
+                <div class="items_list3b">
+                    <img src="./images/Illustration.svg" alt="Illustration">
+                </div>
                 <p>CLIP STUDIO PAINT / Photoshop</p>
                 <p>0から柔軟に、ご要望のイメージをデジタルイラストで表現します。
                     デザインと同時発注し、より色濃い世界観の表現も可能です。細かいパーツ単位のイラストからお承ります。</p>
@@ -199,7 +207,9 @@
 
         <div class="items_list4">
             <h3>Others</h3>
-            <img src="./images/Others.svg" alt="Others">
+            <div class="items_list4b">
+                <img src="./images/Others.svg" alt="Others">
+            </div>
             <p>Lumafusion / Photoshop</p>
             <p>グラフィックレタッチ/動画編集
                 スマホでの写真撮影　etc..
@@ -231,11 +241,25 @@
 
             </div>
 
-            <div class="W_items_list2">
+            <div class="W_items_list3">
                 <img src="./images/Illustration.svg" alt="Illustration">
                 <p>Illustration</p>
             </div>
 
+        </div>
+
+        <div class="W_botan">
+            <div class="W_Coding">
+                <p>Coding</p>
+            </div>
+
+            <div class="W_Design">
+                <p>Design</p>
+            </div>
+
+            <div class="W_Illustration">
+                <p>Illustration</p>
+            </div>
         </div>
 
     </section>
@@ -257,8 +281,10 @@
                     ここから生まれるコミュニケーションや、様々なモノでデザインを味わうことがずっと好きです。</p>
                 <p>大事にしていること</p>
                 <p>より良い「コミュニケーション」をすることです。</p>
-                <p>More!</p>
 
+                <div class="A_More">
+                    <p>More!</p>
+                </div>
             </div>
 
 
@@ -287,7 +313,10 @@
             <p>ご希望納期・公開予定日</p>
             <p>ご依頼内容</p><img src="./images/必須.svg" alt="必須項目">
             <p>おおまかなご依頼内容でも問題ございません。</p>
-            <p>確認画面へ</p>
+
+            <div class="check">
+                <p>確認画面へ</p>
+            </div>
 
         </div>
 
@@ -306,10 +335,10 @@
 
                 <nav class="pc_nav2">
                     <ul>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Skill">Skill</a></li>
-                        <li><a href="#Works">Works</a></li>
-                        <li><a href="#About me">About me</a></li>
+                        <li id="pc_nav2"><a href="#Service">Service</a></li>
+                        <li id="pc_nav2"><a href="#Skill">Skill</a></li>
+                        <li id="pc_nav2"><a href="#Works">Works</a></li>
+                        <li id="pc_nav2"><a href="#About me">About me</a></li>
                         <li class="Contact2"> <a href="#Contact">Contact</a></li>
                     </ul>
 
@@ -322,8 +351,12 @@
 
 
             <div class="SNS2">
-                <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
-                <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                <div class="=instagram">
+                    <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                </div>
+                <div class="X">
+                    <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                </div>
             </div>
 
             <p class="Copyright"> Ⓒ Design Connects all rights reserved.</p>
