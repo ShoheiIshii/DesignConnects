@@ -515,11 +515,7 @@ span {
   width: 88%;
   padding: 33px 0 52px 0;
   margin: 0 auto;
-}
-
-.Service_illust img {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .Service_title {
@@ -594,10 +590,13 @@ span {
 .items_list1b {
   height: 154px;
   width: 42%;
-  padding: 0 9% 0 6.3%;
   margin: 0 auto;
   background-color: #f8f6f0;
   border-radius: 10px;
+  padding: 0 9% 0 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .items_list1b img {
@@ -633,10 +632,16 @@ span {
 .items_list2b {
   height: 154px;
   width: 42%;
-  padding: 0 9% 0 6.3%;
   margin: 0 auto;
   background-color: #f8f6f0;
   border-radius: 10px;
+  padding: 0 6.5% 0 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items_list2bb {
+  padding: 12px 6.5% 0 9%;
 }
 
 .items_list3 {
@@ -652,10 +657,13 @@ span {
 .items_list3b {
   height: 154px;
   width: 42%;
-  padding: 0 9% 0 6.3%;
   margin: 0 auto;
   background-color: #f8f6f0;
   border-radius: 10px;
+  padding: 0 9% 0 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .items_list4 {
@@ -676,6 +684,10 @@ span {
   margin: 24px 9% 24px 0;
   background-color: #f8f6f0;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3% 0 3%;
 }
 .Wacom {
   width: 312px;
