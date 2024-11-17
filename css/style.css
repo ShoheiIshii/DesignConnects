@@ -287,7 +287,7 @@ body {
 }
 
 .worry {
-  width: 72%;
+  /* width: 95%; */
   display: flex;
   position: relative;
   justify-content: center;
@@ -317,27 +317,32 @@ body {
   background: #ded6cd;
   width: 30.5vh;
   height: 30.5vh;
-  animation: fluid-animation 15s ease 0s infinite normal;
+  /* border-radius: 100px; */
+
+  animation: fluid-animation 100s ease 0s infinite normal;
   z-index: 1;
 }
 .afluid2 {
   position: absolute;
-  right: 70px;
-  bottom: -30px;
+  right: 40px;
+  bottom: -45px;
   background: #ded6cd;
-  width: 21px;
-  height: 21px;
-  animation: fluid-animation 10s ease 0s infinite normal;
+  width: 30px;
+  height: 30px;
+  /* border-radius: 100px; */
+  animation: fluid-animation 100s ease 0s infinite normal;
   z-index: 1;
 }
 .afluid3 {
   position: absolute;
-  right: 90px;
-  bottom: -50px;
+  right: 65px;
+  bottom: -70px;
   background: #ded6cd;
-  width: 11px;
-  height: 11px;
-  animation: fluid-animation 10s ease 0s infinite normal;
+  width: 15px;
+  height: 15px;
+  /* border-radius: 100px; */
+
+  animation: fluid-animation 100s ease 0s infinite normal;
   z-index: 1;
 }
 
@@ -710,7 +715,8 @@ span {
 }
 
 .Works_items {
-  max-width: 1800px;
+  /* max-width: 1056px;
+  width: 77%; */
   display: flex;
   justify-content: center;
   padding: 48px 4.7% 0 4.7%;
@@ -824,6 +830,9 @@ span {
 
 .Aboutme {
   display: flex;
+  justify-content: center;
+  gap: 7%;
+  padding: 0 23% 0 23%;
 }
 
 .Aboutme_title {
@@ -835,7 +844,23 @@ span {
 }
 
 .me_illust {
-  width: 18.3%;
+  padding-top: 300px;
+  width: 250px;
+  height: 250px;
+}
+
+.A {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 52px;
+}
+
+.A2 {
+  padding-inline-start: 15px;
+}
+
+.A_dots {
+  padding: 10px 0 10px 0;
 }
 
 .A_More {
@@ -856,13 +881,26 @@ span {
 
 /*-------------------Contact--------------------*/
 
+.Contact_content {
+  display: flex;
+  gap: 8.8%;
+}
+
 .Contact_title {
   padding-top: 186px;
   padding-bottom: 32px;
-
+  padding-left: 13.5%;
   font-weight: bold;
   font-size: 64px;
   color: #47665e;
+}
+
+.Contact_text {
+  padding-left: 13.5%;
+  width: 32%;
+}
+
+.Contact_sheet {
 }
 
 .check {
@@ -885,6 +923,63 @@ span {
 .check p {
   color: #ffffff;
 }
+
+.c-form {
+  max-width: 470px;
+  margin: 0 auto;
+}
+.c-form__item {
+  /* justify-content: space-evenly; */
+  margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+  padding: 10px;
+}
+.c-form__label {
+  width: 90%;
+}
+.c-form__input {
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* .c-form__label{
+  padding-bottom: 2px;
+} */
+
+#field-message {
+}
+
+.c-form__input:focus-visible {
+  outline: #eb7f4c auto 1px;
+}
+.c-form__required {
+  font-size: 12px;
+  color: #fff;
+  background-color: #eb7f4c;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+textarea.c-form__input {
+  height: 250px;
+}
+
+/* 
+@media (min-width: 640px) {
+  .c-form__item {
+    flex-wrap: nowrap;
+  }
+  .c-form__label {
+    width: 40%;
+  }
+  .c-form__input {
+    width: 55%;
+  }
+} */
 
 /*-------------------Footer--------------------*/
 .footer_content {
