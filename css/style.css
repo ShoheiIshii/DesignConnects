@@ -937,18 +937,15 @@ span {
   padding: 10px;
 }
 .c-form__label {
-  width: 90%;
+  line-height: 2;
 }
 .c-form__input {
   width: 90%;
   font-size: 16px;
   border: none;
   border-radius: 10px;
+  background-color: #dcdcdc;
 }
-
-/* .c-form__label{
-  padding-bottom: 2px;
-} */
 
 #field-message {
 }
@@ -962,10 +959,13 @@ span {
   background-color: #eb7f4c;
   border-radius: 5px;
   padding: 5px 5px;
+  line-height: 10px;
+  margin: 10px;
 }
 
 textarea.c-form__input {
   height: 250px;
+  background-color: #dcdcdc;
 }
 
 /* 
