@@ -827,6 +827,15 @@ span {
   width: 56%;
 }
 
+.W_items_list1:hover .hover-img {
+  background-image: url("/images/Works_coding.jpg");
+}
+
+.W_items_list1 {
+  /* 通常の設定 */
+  transition: background-image 0.3s ease;
+}
+
 .W_items_list2 {
   width: 300px;
   height: 300px;
@@ -983,6 +992,27 @@ span {
   width: 32%;
 }
 
+.Contact_text p {
+  line-height: 1.7;
+}
+
+#Contact_text1 {
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+#Contact_text2 {
+  font-size: 12px;
+}
+#Contact_text3 {
+  padding-top: 16px;
+}
+#Contact_text4 {
+  text-decoration-line: underline;
+  text-decoration-color: #40322d; /* 下線の色 */
+  text-decoration-style: solid; /* 下線のスタイル */
+  text-decoration-thickness: 1px; /* 下線の太さ */
+}
+
 .Contact_sheet {
 }
 
@@ -991,19 +1021,29 @@ span {
   padding-bottom: 200px;
 }
 
-.check_botan {
+.c-form__submit {
+}
+
+button[type="submit"] {
+  color: white; /* テキストの色 */
+  border: none; /* ボーダーを削除 */
+  cursor: pointer; /* マウスオーバー時のカーソル */
+  transition: background-color 0.3s; /* 色変更の滑らかさ */
   align-items: center;
   justify-content: center;
   display: flex;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  font-weight: 700;
   background-color: #47665e;
   box-shadow: 0px 4px 0px 0px #2d453f;
 }
 
-.check p {
+button[type="submit"]:hover {
+  background-color: #45a049; /* ホバー時の色 */
+}
+
+.submit {
   color: #ffffff;
 }
 
@@ -1013,11 +1053,14 @@ span {
 }
 .c-form__item {
   /* justify-content: space-evenly; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .c-form__label,
 .c-form__input {
-  padding: 10px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 8px;
 }
 .c-form__label {
   line-height: 2;
@@ -1026,7 +1069,7 @@ span {
   width: 90%;
   font-size: 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #dcdcdc;
 }
 
@@ -1034,7 +1077,7 @@ span {
 }
 
 .c-form__input:focus-visible {
-  outline: #eb7f4c auto 1px;
+  outline: #afafaf auto 1px;
 }
 .c-form__required {
   font-size: 12px;
@@ -1043,12 +1086,16 @@ span {
   border-radius: 5px;
   padding: 5px 5px;
   line-height: 10px;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 textarea.c-form__input {
   height: 250px;
   background-color: #dcdcdc;
+}
+
+::placeholder {
+  color: #afafaf;
 }
 
 /* 

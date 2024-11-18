@@ -309,10 +309,15 @@
             <div class="a_W_items_list1">
                 <div class="W_items_list1">
                     <img src="./images/Coding.svg" alt="Coding">
+                    <div class="hover-img"></div>
                 </div>
+
+
                 <div class="W_dotts">
                     <img src="./images/dots3.svg" alt="dots3">
                 </div>
+
+
 
                 <div class="W_botan">
                     <div class="W_Coding">
@@ -410,19 +415,19 @@
         <div class="Contact_content">
 
             <div class="Contact_text">
-                <p>まずは、ちょっとした内容からで全く問題ございません。
+                <p id="Contact_text1">まずは、ちょっとした内容からで全く問題ございません。
                     どうぞお気軽にご相談ください。</p>
-                <p>また、制作初期に必要なコンセプトデザインは、スムーズなイメージ合わせが重要となるためスピーディーに対応しております。最初期のイメージラフは、2〜3⽇で制作可能です。
-                    ※プロジェクト規模により変動</p>
-                <p>直接メールでのお問い合わせも承っております。</p>
-                <p>is.hono.at.1122@gmail.com</p>
+                <p>また、制作初期に必要なコンセプトデザインは、スムーズなイメージ合わせが重要となるためスピーディーに対応しております。最初期のイメージラフは、2〜3⽇で制作可能です。</p>
+                <p id="Contact_text2">※プロジェクト規模により変動</p>
+                <p id="Contact_text3">直接メールでのお問い合わせも承っております。</p>
+                <p id="Contact_text4">is.hono.at.1122@gmail.com</p>
             </div>
 
             <div class="Contact_sheet">
 
                 <form class="c-form">
                     <div class="c-form__item">
-                        <label class="c-form__label" for="field-name">お名前　　　　<span
+                        <label class="c-form__label" for="field-name">お名前 <span
                                 class="c-form__required">必須</span></label>
                         <input name="entry.1515110688" class="c-form__input" id="field-name" placeholder="" type="text"
                             required="required" />
@@ -430,10 +435,10 @@
 
 
                     <div class="c-form__item">
-                        <label class="c-form__label" for="field-name">メールアドレス<span
+                        <label class="c-form__label" for="field-name">メールアドレス <span
                                 class="c-form__required">必須</span></label>
                         <input name="entry.323146835" class="c-form__input" id="field-name"
-                            placeholder="sample@gmail.com" type="text" required="required" />
+                            placeholder=" sample@gmail.com" type="text" required="required" />
                     </div>
 
                     <div class="c-form__item">
@@ -443,15 +448,12 @@
                     </div>
 
                     <div class="c-form__item">
-                        <label class="c-form__label" for="field-message">ご依頼内容　　<span
+                        <label class="c-form__label" for="field-message">ご依頼内容 <span
                                 class="c-form__required">必須</span></label>
                         <textarea name="entry.427884209" class="c-form__input" id="field-message"
-                            placeholder="おおまかなご依頼内容でも問題ございません。"></textarea>
+                            placeholder=" 簡単なご依頼内容でも問題ございません。"></textarea>
                     </div>
 
-                    <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdB9AA3MBpc6JR904zcSGgx-SrOUpaU26IzSPhpmaBfD9pLUg/formResponse"
-                        method="POST"></form>
 
                     <!--                     
                 
@@ -462,12 +464,14 @@
                 <p>おおまかなご依頼内容でも問題ございません。</p> -->
 
                     <div class="check">
-
-
-                        <div class="check_botan">
-                            <p>確認画面へ</p>
+                        <div class="c-form__submit">
+                            <button type="submit">確認画面へ</button>
                         </div>
                     </div>
+
+                    <form
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdB9AA3MBpc6JR904zcSGgx-SrOUpaU26IzSPhpmaBfD9pLUg/formResponse"
+                        method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form"></form>
 
             </div>
 
@@ -528,8 +532,16 @@
             fade: true,
             cssEase: 'linear'
         });
+
+
+
     </script>
 
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='file:///d%3A/Desktop/DesignConnects/Thanks.html';}"></iframe>
 
 
 </body>
