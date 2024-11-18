@@ -430,16 +430,16 @@ body {
 
 .Service2 {
   display: flex;
-  padding-bottom: 18.8px;
+  padding-bottom: 11.4px;
 }
 #Brand {
   position: relative;
   display: inline-block;
   top: 20%;
-  left: 70%;
+  left: 65%;
   background-color: #e2dbd3;
   font-size: 16px;
-  padding: 76px 10px 0 10px;
+  padding: 79px 10px 0 10px;
 }
 
 .Brand_line {
@@ -471,9 +471,11 @@ body {
 .Service2_text {
   max-width: 588px;
   margin: 0 auto;
-  padding: 40px 11.2% 27px 10%;
+  padding: 30px 10% 35px 6.7%;
   font-size: 16px;
   width: 37.5%;
+  text-align: justify;
+  /* text-align-last: justify; */
 }
 
 .Service_text p {
@@ -505,25 +507,6 @@ span {
   border-bottom: 2px dotted;
 }
 
-/* .line1 > span:after {
-  background: radial-gradient(
-    circle farthest-side,
-    #000,
-    #000 60%,
-    transparent 60%,
-    transparent
-  );
-  background-size: 5px;
-  content: "";
-  display: inline-block;
-  height: 5px;
-  width: 100%;
-} */
-
-/* .line1 > span {
-  border-bottom: 3px dotted black;
-} */
-
 #S {
   font-size: 36px;
   color: #47665e;
@@ -544,8 +527,12 @@ span {
   width: 37.5%;
   background-color: #f8f6f0;
   border-radius: 10px;
-  margin-left: 11.2%;
+  margin-left: 10%;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
 .Service_illust {
@@ -575,66 +562,59 @@ span {
   font-size: 64px;
   color: #47665e;
 }
-/* 
-.slick-next {
-  right: 3%;
-}
-.slick-prev,
-.slick-next {
-  top: 50%;
-  width: 4.5%;
-  height: 62px;
-}
-.slick-next {
-  right: -25px;
-}
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
+
+/*----------------Service slickカルーセル表示-------------------*/
+
+.slick-dots {
+  bottom: 10px;
 }
 
-.slick-next::before {
-  background-image: url(../images/Design.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #40322d;
+  font-size: 8px;
+  top: 60px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-next {
+  top: 110%;
+  right: 45%;
+}
+
+.slick-prev {
+  top: 110%;
+
+  left: 45%;
+  z-index: 99;
+}
+.slick-next:before {
+  content: "";
+  display: block;
+  width: 10px; /*ここのwidthとheightの役割は？？？？ デベロッパで確認したところ>の範囲指定のこと？*/
+  height: 10px;
+  border-top: 2px solid #40322d;
+  border-right: 2px solid #40322d;
+  transform: rotate(45deg);
+}
+
+.slick-prev:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #40322d;
+  border-left: 2px solid #40322d;
+  transform: rotate(-45deg);
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
   opacity: 1;
 }
-.slick-arrow::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.slick-next:before {
-  content: "→";
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
 
 /*-------------------Skill--------------------*/
 
@@ -1152,52 +1132,4 @@ textarea.c-form__input {
   text-align: center;
   padding-bottom: 64px;
   padding-top: 34px;
-}
-
-/*----------------slick画像のカルーセル表示-------------------*/
-
-.slick-dots {
-  bottom: 10px;
-}
-
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-  color: #40322d;
-}
-
-.slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-
-.slick-next {
-  right: 22%;
-}
-
-.slick-prev {
-  left: 22%;
-  z-index: 99;
-}
-.slick-next:before {
-  content: "";
-  display: block;
-  width: 20px; /*ここのwidthとheightの役割は？？？？ デベロッパで確認したところ>の範囲指定のこと？*/
-  height: 20px;
-  border-top: 4px solid #40322d;
-  border-right: 4px solid #40322d;
-  transform: rotate(45deg);
-}
-
-.slick-prev:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-top: 4px solid #40322d;
-  border-left: 4px solid #40322d;
-  transform: rotate(-45deg);
-}
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: 1;
 }
