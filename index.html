@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignConeects</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 
@@ -152,20 +154,48 @@
             <p>Communication＆Creative</p>
         </div>
 
-        <div class="Service_content">
-            <div class="Service_text">
-                <p class="line1"><span class="line2"><span id="S">人</span>と<span id="SS">つながる</span>クリエイティブを</span></p>
-                <p class="line1"><span class="line2"><span id="S">伝</span>えたい相手へ思った通りに<span
-                            id="SS">伝えられる</span>デザインを</span></span></p>
-            </div>
 
-            <div class="Service_content2">
-                <div class="Service_illust">
-                    <img src="./images/Service.svg" alt="Service">
+        <div class="Service_slick">
+            <div class="Service_content">
+                <div class="Service_text">
+                    <p class="line1"><span class="line2"><span id="S">人</span>と<span id="SS">つながる</span>クリエイティブを</span>
+                    </p>
+                    <p class="line1"><span class="line2"><span id="S">伝</span>えたい相手へ思った通りに<span
+                                id="SS">伝えられる</span>デザインを</span></span></p>
+                </div>
+
+                <div class="Service_content2">
+                    <div class="Service_illust">
+                        <img src="./images/Service.svg" alt="Service">
+                    </div>
                 </div>
             </div>
 
+            <div class="Service_content">
+                <div class="Brand_line"></div>
+                <p id="Brand">Branding</p>
+                <div class="Service2">
+
+                    <div class="Service2_content2">
+                        <div class="Service2_illust">
+                            <img src="./images/Brand.svg" alt="Brand">
+                        </div>
+                    </div>
+                    <div class="Service2_text">
+                        <p>　ブランドに関わるあらゆるデザインは事業の人間性を表すと考えてます。事業の成長に欠かせない人と人のつながりを築く上で非常に重要なため、必要なこだわりをもちつつ制作しております。</p>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+        <!-- <button class="slick-prev slick-arrow" aria-label="Previous" type="button" aria-disabled="false"
+            style="">Previous</button>
+
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style=""
+            aria-disabled="false">Next</button> -->
+
     </section>
 
 
@@ -355,6 +385,7 @@
                 <p>また、制作初期に必要なコンセプトデザインは、スムーズなイメージ合わせが重要となるためスピーディーに対応しております。最初期のイメージラフは、2〜3⽇で制作可能です。
                     ※プロジェクト規模により変動</p>
                 <p>直接メールでのお問い合わせも承っております。</p>
+                <p>is.hono.at.1122@gmail.com</p>
             </div>
 
             <div class="Contact_sheet">
@@ -459,33 +490,16 @@
 
     </section>
 
-
     <script>
-        $('.Service_content').slick({
+        $('.Service_slick').slick({
             dots: true,
-            speed: 300,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-
-                    }
-                },
-
-                // 指定したブレイクポイントでslickを無効化するには
-                // オブジェクトの代わりに settings: "unslick" を指定します。
-            ]
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
         });
-
     </script>
+
 
 
 </body>
