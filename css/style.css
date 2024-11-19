@@ -285,19 +285,19 @@ body {
   color: #eb7f4c;
   font-size: 32px;
 }
+/* 
+.worry0 {
+  width: 70%;
+  margin: 0 auto;
+} */
 
 .worry {
-  /* width: 95%; */
+  /* width: 100%; */
+  /* max-width: 980px; */
   display: flex;
   position: relative;
   justify-content: center;
-  gap: 100px;
-}
-
-.worry0 {
-  width: 72%;
-
-  margin: 0 auto;
+  gap: 7.3%;
 }
 
 .worry_list {
@@ -315,8 +315,8 @@ body {
   left: 100px;
   bottom: 50px;
   background: #ded6cd;
-  width: 30.5vh;
-  height: 30.5vh;
+  width: 255px;
+  height: 244px;
   /* border-radius: 100px; */
 
   animation: fluid-animation 100s ease 0s infinite normal;
@@ -435,11 +435,12 @@ body {
 #Brand {
   position: relative;
   display: inline-block;
-  top: 20%;
+  /* top: 20%; */
+  bottom: 15px;
   left: 65%;
   background-color: #e2dbd3;
   font-size: 16px;
-  padding: 79px 10px 0 10px;
+  padding: 0px 10px 0 10px;
 }
 
 .Brand_line {
@@ -452,15 +453,19 @@ body {
 }
 
 .Service_content {
-  max-width: 950px;
-  width: 59%;
+  width: 100%;
   background-color: #e2dbd3;
   border-radius: 10px;
   font-size: 24px;
   padding-bottom: 45px;
-  margin: 0 10%;
+  /* margin: 0 10%; */
+  /* position: relative; */
+}
 
-  position: relative;
+.Service_slick {
+  max-width: 950px;
+  width: 59%;
+  margin: 0 auto;
 }
 
 .Service_text {
@@ -572,8 +577,8 @@ span {
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: #40322d;
-  font-size: 8px;
-  top: 60px;
+  font-size: 15px;
+  top: 20px;
 }
 
 .slick-dotted.slick-slider {
@@ -581,14 +586,31 @@ span {
 }
 
 .slick-next {
-  top: 110%;
-  right: 45%;
+  padding-right: 3px;
+  top: 102%;
+  right: 35%;
+  background-color: #e2dbd3;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slick-prev {
-  top: 110%;
+  padding-left: 3px;
 
-  left: 45%;
+  top: 102%;
+  left: 35%;
+  background-color: #e2dbd3;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 99;
 }
 .slick-next:before {
@@ -641,6 +663,7 @@ span {
   display: flex;
   margin: 0 auto;
   max-width: 1000px;
+  width: 71%;
   gap: 40px;
   padding-bottom: 0px;
 }
@@ -659,7 +682,7 @@ span {
 
 .items_list1 {
   width: 30%;
-  height: 570px;
+  height: 100%;
   margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
@@ -686,22 +709,39 @@ span {
 }
 
 .items_list1 p {
-  padding: 24px 26px 0 26px;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-left: 26px;
   line-height: 24px;
 }
 
+.St1 {
+  padding-bottom: 67px;
+}
 .items_list2 p {
-  padding: 24px 26px 0 26px;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-left: 26px;
   line-height: 24px;
 }
+
+.St2 {
+  padding-bottom: 32%;
+}
 .items_list3 p {
-  padding: 24px 26px 0 26px;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-left: 26px;
   line-height: 24px;
+}
+
+.St3 {
+  padding-bottom: 40%;
 }
 
 .items_list2 {
   width: 30%;
-  height: 570px;
+  height: 100%;
   margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
@@ -726,7 +766,7 @@ span {
 
 .items_list3 {
   width: 30%;
-  height: 570px;
+  height: 100%;
   margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
@@ -814,6 +854,21 @@ span {
 .a_W_items_list3 {
 }
 
+.W {
+  width: 102px;
+  margin: 0 auto;
+}
+
+.W2 {
+  width: 102px;
+  margin: 0 auto;
+}
+
+.W3 {
+  width: 102px;
+  margin: 0 auto;
+}
+
 .W_items_list1 {
   width: 300px;
   height: 300px;
@@ -869,13 +924,13 @@ span {
 }
 
 .W_dotts {
-  display: flex;
-  padding: 0 23.5% 0 23.5%;
+  width: 20px;
+  margin: 0 auto;
 }
 
 .W_botan {
   display: flex;
-  padding: 0 19% 0 19%;
+  /* padding: 0 19% 0 33%; */
 }
 
 .W_botan p {
@@ -1017,8 +1072,9 @@ span {
 }
 
 .check {
-  padding-top: 32px;
-  padding-bottom: 200px;
+  padding: 32px 40% 200px 35%;
+  /* width: 90px;
+  margin: 0 auto; */
 }
 
 .c-form__submit {
@@ -1040,7 +1096,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049; /* ホバー時の色 */
+  background-color: #eb7f4c; /* ホバー時の色 */
 }
 
 .submit {
@@ -1071,6 +1127,7 @@ button[type="submit"]:hover {
   border: none;
   border-radius: 5px;
   background-color: #dcdcdc;
+  font-size: 14px;
 }
 
 #field-message {
@@ -1080,7 +1137,7 @@ button[type="submit"]:hover {
   outline: #afafaf auto 1px;
 }
 .c-form__required {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   background-color: #eb7f4c;
   border-radius: 5px;
@@ -1092,6 +1149,9 @@ button[type="submit"]:hover {
 textarea.c-form__input {
   height: 250px;
   background-color: #dcdcdc;
+  font-size: 14px;
+  margin-right: 150px;
+  line-height: 1.5;
 }
 
 ::placeholder {
