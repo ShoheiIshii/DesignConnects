@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #40322d;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.25s;
+}
+
+a:hover {
+  /*ホバー時の文字アクション設定*/
+  opacity: 0.75;
+  /*color: #ff8800; */
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+  /* width: 100%; */
+}
+
+body {
+  background: #f8f6f0;
+  overflow-x: hidden;
+}
+
+.check3 {
+  padding: 32px 40% 200px 35%;
+  /* width: 90px;
+    margin: 0 auto; */
+}
+
+.c-form__submit {
+}
+
+button[type="submit"] {
+  color: white; /* テキストの色 */
+  border: none; /* ボーダーを削除 */
+  cursor: pointer; /* マウスオーバー時のカーソル */
+  transition: background-color 0.3s; /* 色変更の滑らかさ */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #47665e;
+  box-shadow: 0px 4px 0px 0px #2d453f;
+}
+
+button[type="submit"]:hover {
+  background-color: #eb7f4c; /* ホバー時の色 */
+}
+
+.submit {
+  color: #ffffff;
+}

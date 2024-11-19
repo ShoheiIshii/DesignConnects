@@ -881,9 +881,59 @@ span {
 .W_items_list1 img {
   width: 56%;
 }
-
-.W_items_list1:hover .hover-img {
+/* 
+.W_items_list1:hover ~ .hover-img {
   background-image: url("/images/Works_coding.jpg");
+} */
+
+.W_btn {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  /* cursor: alias; */
+}
+/* .W_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.W_btn:hover img:nth-of-type(2) {
+  -webkit-transform: translate(-50%, -50%) scale(1.15) !important;
+  transform: translate(-50%, -50%) scale(1.15) !important;
+  opacity: 0;
+}
+ */
+.W_btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.W_btn img:nth-of-type(1) {
+  top: -100%;
+}
+.W_btn img:nth-of-type(2) {
+  top: 0;
+}
+.W_btn:hover img:nth-of-type(1) {
+  top: 0;
+}
+.W_btn:hover img:nth-of-type(2) {
+  top: 100%;
 }
 
 .W_items_list1 {
@@ -923,7 +973,7 @@ span {
   width: 56%;
 }
 
-.W_dotts {
+.W_dots {
   width: 20px;
   margin: 0 auto;
 }
