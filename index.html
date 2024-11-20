@@ -450,7 +450,7 @@
 
             <div class="Contact_sheet">
 
-                <form class="c-form">
+                <form action="./Thanks.php" method="POST" class="c-form">
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-name">お名前 <span
                                 class="c-form__required">必須</span></label>
@@ -468,7 +468,7 @@
 
                     <div class="c-form__item">
                         <label class="c-form__label" for="field-name">ご希望納期・公開予定日</label>
-                        <input name="entry.1766446139" class="c-form__input" id="field-name" placeholder="" type="text"
+                        <input name="entry.1766446139" class="c-form__input" id="field-name" placeholder="" type="date"
                             required="required" />
                     </div>
 
@@ -493,11 +493,7 @@
                             <button type="submit">確認画面へ</button>
                         </div>
                     </div>
-
-                    <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdB9AA3MBpc6JR904zcSGgx-SrOUpaU26IzSPhpmaBfD9pLUg/formResponse"
-                        method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form"></form>
-
+                </form>
             </div>
 
 
@@ -561,12 +557,6 @@
 
 
     </script>
-
-    <script type="text/javascript">
-        let submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='file:///d%3A/Desktop/DesignConnects/Thanks.html';}"></iframe>
 
 
 </body>

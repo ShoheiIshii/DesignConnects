@@ -293,11 +293,12 @@ body {
 
 .worry {
   /* width: 100%; */
-  /* max-width: 980px; */
+  max-width: 980px;
   display: flex;
   position: relative;
-  justify-content: center;
-  gap: 7.3%;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* gap: 7.3%; */
 }
 
 .worry_list {
@@ -305,17 +306,20 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  width: 26%;
 }
 
 .worry_list > div {
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .afluid {
   left: 100px;
   bottom: 50px;
   background: #ded6cd;
-  width: 255px;
+  width: 100%;
   height: 244px;
   /* border-radius: 100px; */
 
@@ -363,7 +367,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
-  width: 180px;
+  max-width: 180px;
+  width: 90%;
   line-height: 24px;
 }
 .worry_text3 {
@@ -638,6 +643,13 @@ span {
   opacity: 1;
 }
 
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background-color: #e2dbd3;
+}
+
 /*-------------------Skill--------------------*/
 
 .Skill_title {
@@ -664,7 +676,7 @@ span {
   margin: 0 auto;
   max-width: 1000px;
   width: 71%;
-  gap: 40px;
+  justify-content: space-between;
   padding-bottom: 0px;
 }
 
@@ -682,8 +694,6 @@ span {
 
 .items_list1 {
   width: 30%;
-  height: 100%;
-  margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
   font-size: 16px;
@@ -741,8 +751,6 @@ span {
 
 .items_list2 {
   width: 30%;
-  height: 100%;
-  margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
   font-size: 16px;
@@ -766,8 +774,6 @@ span {
 
 .items_list3 {
   width: 30%;
-  height: 100%;
-  margin: 0 auto;
   background-color: #e2dbd3;
   border-radius: 10px;
   font-size: 16px;
