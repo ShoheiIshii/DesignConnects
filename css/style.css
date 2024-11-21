@@ -459,9 +459,9 @@ body {
 
 .Service_content {
   width: 100%;
-  background-color: #e2dbd3;
+  /* background-color: #e2dbd3;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 24px; */
   padding-bottom: 45px;
   /* margin: 0 10%; */
   /* position: relative; */
@@ -651,6 +651,8 @@ span {
 }
 
 /*-------------------Skill--------------------*/
+.test {
+}
 
 .Skill_title {
   display: flex;
@@ -919,7 +921,7 @@ span {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-bn .W_btn > img {
+.W_btn > img {
   /* top: -100%; */
   opacity: 0;
 }
@@ -939,11 +941,45 @@ bn .W_btn > img {
   /* top: 100%; */
   opacity: 0;
 }
-
 .W_items_list1 {
   /* 通常の設定 */
   transition: background-image 0.3s ease;
 }
+/* ----------------------------------------------- */
+.W_btn2 img {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.W_btn2 > img {
+  /* top: -100%; */
+  opacity: 0;
+}
+/*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
+
+.W_btn2 .W_items_list2-2 img {
+  /* width: 52%; */
+  /* top: 0; */
+  opacity: 1;
+}
+
+.W_btn2:hover > img {
+  /* top: 0; */
+  opacity: 1;
+}
+.W_btn2:hover .W_items_list2-2 img {
+  /* top: 100%; */
+  opacity: 0;
+}
+
+.W_items_list2 {
+  /* 通常の設定 */
+  transition: background-image 0.3s ease;
+} /* ----------------------------------------------- */
 
 .W_items_list1 {
   width: 100%;
@@ -964,7 +1000,7 @@ bn .W_btn > img {
   align-items: center;
 }
 
-.W_items_list22 {
+.W_items_list2-2 {
   padding: 15px 0 0 15px;
 }
 
