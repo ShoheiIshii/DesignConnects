@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #40322d;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.25s;
+}
+
+a:hover {
+  /*ホバー時の文字アクション設定*/
+  opacity: 0.75;
+  /*color: #ff8800; */
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+  /* width: 100%; */
+}
+
+body {
+  background: #f8f6f0;
+  overflow-x: hidden;
+}
+
+/*-------------------ヘッダー--------------------*/
+
+.header_logo {
+  padding: 0 0 0 35px;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #e2dbd3;
+  padding: 17px 0 17px 0;
+}
+
+.pc_nav {
+  display: flex;
+
+  gap: 88px;
+  font-weight: 600;
+
+  padding-right: 54px;
+}
+.pc_nav ul {
+  display: flex;
+  gap: 48px;
+}
+.pc_nav ul li a {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-color: #40322d;
+  border-radius: 50%;
+  border: solid 1px;
+  box-sizing: border-box;
+}
+.Contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #eb7f4c;
+  color: #ffffff;
+  box-shadow: 0px 4px 0px 0px #943e29;
+}
+
+/*-------------------Works--------------------*/
+
+.Works_title2 {
+  font-weight: bold;
+  font-size: 64px;
+  color: #47665e;
+  display: flex;
+  justify-content: center;
+  padding-top: 184px;
+  padding-bottom: 8px;
+}
+
+.Works_title1 p {
+  text-align: center;
+}
+
+/*-------------------Footer--------------------*/
+.footer_content {
+  background-color: #e2dbd3;
+}
+
+.footer_wrap {
+  /* padding: 17px 0 17px 0; */
+}
+
+.pc_nav2 {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  padding: 100px 0 0 0;
+}
+
+.pc_nav2 ul {
+  display: flex;
+  gap: 48px;
+}
+
+#pc_nav2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-color: #40322d;
+  border-radius: 50%;
+  border: solid 1px;
+  box-sizing: border-box;
+}
+.Contact2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: #eb7f4c;
+  color: #ffffff;
+  box-shadow: 0px 4px 0px 0px #943e29;
+}
+
+/* .Contact2 a {
+    border: none;
+  }
+   */
+.footer_logo {
+  width: 109px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  padding-top: 88px;
+}
+
+.SNS2 {
+  text-align: center;
+  display: flex;
+  gap: 16px;
+  width: 116px;
+  margin: 0 auto;
+}
+
+.Copyright {
+  text-align: center;
+  padding-bottom: 64px;
+  padding-top: 34px;
+}

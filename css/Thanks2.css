@@ -60,9 +60,22 @@ body {
   overflow-x: hidden;
 }
 
+.back {
+  padding-bottom: 84px;
+  background-color: #e2dbd3;
+}
+.back2 {
+  padding-bottom: 84px;
+  background-color: #e2dbd3;
+}
+
+p {
+  padding-top: 56px;
+  font-weight: 700;
+}
+
 .check3 {
   padding: 32px 40% 200px 35%;
-  width: 90px;
   /* margin: 0 auto;  */
 }
 
