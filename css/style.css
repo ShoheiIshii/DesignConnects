@@ -279,7 +279,9 @@ body {
 
 .dots {
   /* transform: translateX(-50%); */
-  position: relative;
+  display: flex;
+  padding-left: 95px;
+  /* position: relative; */
   right: 192px;
   bottom: -5px;
   color: #eb7f4c;
@@ -382,20 +384,18 @@ body {
   line-height: 24px;
 }
 
-/* .worry_list img {
-  width: 200px;
-} */
 .a img {
-  padding-top: 45px;
-  height: 257%;
+  padding-top: 50px;
+  height: 130px;
 }
+
 .b img {
-  padding-top: 45px;
-  height: 78%;
+  padding-top: 55px;
+  height: 125px;
 }
 .c img {
-  padding-top: 45px;
-  height: 80%;
+  padding-top: 53px;
+  height: 130px;
 }
 
 .fluid2 {
@@ -689,7 +689,7 @@ span {
   width: 112px;
   font-size: 36px;
   font-weight: 700;
-  padding: 78px 46px 78px 148px;
+  padding: 78px 4.6% 78px 14.8%;
 }
 
 .items_list1 {
@@ -805,7 +805,7 @@ span {
 }
 
 .items_list4b {
-  width: 26%;
+  width: 100%;
   height: 154px;
   margin: 24px 9% 24px 0;
   background-color: #f8f6f0;
@@ -844,20 +844,24 @@ span {
 }
 
 .Works_items {
-  /* max-width: 1056px;
-  width: 77%; */
+  max-width: 1056px;
+  /* width: 77%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 48px 4.7% 0 4.7%;
-  gap: 48px;
+  /* gap: 48px; */
 }
 
 .a_W_items_list1 {
+  width: 28.41%;
 }
 .a_W_items_list2 {
   padding-top: 155px;
+  width: 28.41%;
 }
 .a_W_items_list3 {
+  width: 28.41%;
 }
 
 .W {
@@ -874,23 +878,10 @@ span {
   width: 102px;
   margin: 0 auto;
 }
-
-.W_items_list1 {
-  width: 300px;
-  height: 300px;
-  background-color: #e2dbd3;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.W_items_list1 img {
-  width: 56%;
-}
 /* 
 .W_items_list1:hover ~ .hover-img {
   background-image: url("/images/Works_coding.jpg");
-} */
+  } */
 
 .W_btn {
   position: relative;
@@ -903,22 +894,22 @@ span {
   /* cursor: alias; */
 }
 /* .W_btn img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: block;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-.W_btn:hover img:nth-of-type(2) {
-  -webkit-transform: translate(-50%, -50%) scale(1.15) !important;
-  transform: translate(-50%, -50%) scale(1.15) !important;
-  opacity: 0;
-}
- */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: block;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    }
+    .W_btn:hover img:nth-of-type(2) {
+      -webkit-transform: translate(-50%, -50%) scale(1.15) !important;
+      transform: translate(-50%, -50%) scale(1.15) !important;
+      opacity: 0;
+      }
+      */
 .W_btn img {
   position: absolute;
   top: 0;
@@ -926,20 +917,27 @@ span {
   width: 100%;
   display: block;
   -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+bn .W_btn > img {
+  /* top: -100%; */
+  opacity: 0;
+}
+/*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
+
+.W_btn .W_items_list1 img {
+  width: 52%;
+  /* top: 0; */
+  opacity: 1;
 }
 
-.W_btn img:nth-of-type(1) {
-  top: -100%;
+.W_btn:hover > img {
+  /* top: 0; */
+  opacity: 1;
 }
-.W_btn img:nth-of-type(2) {
-  top: 0;
-}
-.W_btn:hover img:nth-of-type(1) {
-  top: 0;
-}
-.W_btn:hover img:nth-of-type(2) {
-  top: 100%;
+.W_btn:hover .W_items_list1 img {
+  /* top: 100%; */
+  opacity: 0;
 }
 
 .W_items_list1 {
@@ -947,8 +945,17 @@ span {
   transition: background-image 0.3s ease;
 }
 
+.W_items_list1 {
+  width: 100%;
+  height: 300px;
+  background-color: #e2dbd3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .W_items_list2 {
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-color: #e2dbd3;
   border-radius: 50%;
@@ -958,7 +965,7 @@ span {
 }
 
 .W_items_list22 {
-  padding: 30px 0 0 20px;
+  padding: 15px 0 0 15px;
 }
 
 /* .W_items_list2 img {
@@ -966,7 +973,7 @@ span {
 } */
 
 .W_items_list3 {
-  width: 300px;
+  width: 100%;
   height: 300px;
   background-color: #e2dbd3;
   border-radius: 50%;
