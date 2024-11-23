@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignConeectsWorksSummary</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
     <link rel="stylesheet" href="./css/WorksSummary.css">
     <link rel="stylesheet" type="text/css" href="./css/WorksSummary.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -44,6 +49,14 @@
         <div class="Works_title1">
             <h2 class="Works_title2">Works</h2>
             <p>syo portfolio</p>
+        </div>
+
+        <div class="Works_slick">
+            <div class="Works_design">
+                <img src="./images/Design1_Works_Summary.png" alt="Works_slide1">
+                <img src="./images/Design2_Works_Summary.png" alt="Works_slide1">
+                <img src="./images/Design3_Works_Summary.png" alt="Works_slide1">
+            </div>
         </div>
 
     </section>
@@ -91,6 +104,23 @@
 
 
     </section>
+
+    <script>
+        $('.Works_slick').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            // appendArrows: $('.Slick_arrows'),
+            // appendDots: $('.Slick_dots'),
+        });
+
+
+
+    </script>
+
+
 
 </body>
 

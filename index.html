@@ -236,10 +236,13 @@
                     <picture>
             </div>
 
-
-
         </div>
 
+
+        <div class="Slick_navigation">
+            <div class="Slick_arrows"></div>
+            <div class="Slick_dots"></div>
+        </div>
 
 
     </section>
@@ -329,7 +332,7 @@
             <div class="a_W_items_list1">
                 <div class="W_btn">
                     <img src="./images/Works_coding.png" alt="Coding">
-                    <div class="W_items_list1"><img src="./images/Coding.svg" alt="Coding"></div>
+                    <div class="W_items_list"><img src="./images/Coding.svg" alt="Coding"></div>
 
                 </div>
 
@@ -350,7 +353,7 @@
             <div class="a_W_items_list2">
                 <div class="W_btn2">
                     <img src="./images/Works_design.png" alt="Design">
-                    <div class="W_items_list2">
+                    <div class="W_items_list">
                         <div class="W_items_list2-2"><img src="./images/Design2.svg" alt="Design"></div>
                     </div>
 
@@ -375,7 +378,7 @@
 
 
             <div class="a_W_items_list3">
-                <div class="W_items_list3">
+                <div class="W_items_list">
                     <img src="./images/Illustration.svg" alt="Illustration">
                 </div>
                 <div class="W3">
@@ -555,7 +558,9 @@
             infinite: true,
             // speed: 500,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            appendArrows: $('.Slick_arrows'),
+            appendDots: $('.Slick_dots'),
         });
 
 

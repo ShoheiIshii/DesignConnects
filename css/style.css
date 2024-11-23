@@ -254,7 +254,7 @@ body {
 /*-------------------こんなお悩み--------------------*/
 
 .onayami {
-  padding-top: 128px;
+  padding: 128px 5% 0 5%;
 }
 
 .onayami_title {
@@ -321,8 +321,9 @@ body {
   left: 100px;
   bottom: 50px;
   background: #ded6cd;
-  width: 100%;
-  height: 244px;
+  aspect-ratio: 1;
+  /* width: 100%;
+  height: 244px; */
   /* border-radius: 100px; */
 
   animation: fluid-animation 100s ease 0s infinite normal;
@@ -359,6 +360,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
+  width: 90%;
+
   line-height: 24px;
 }
 
@@ -380,7 +383,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
-  width: 144px;
+  width: 120x;
   line-height: 24px;
 }
 
@@ -575,6 +578,18 @@ span {
 
 /*----------------Service slickカルーセル表示-------------------*/
 
+.Service_content picture {
+  display: flex;
+  justify-content: center;
+}
+
+.Slick_navigation {
+  height: 40px;
+  position: relative;
+  width: 255px;
+  margin: 0 auto;
+}
+
 .slick-dots {
   bottom: 10px;
 }
@@ -583,7 +598,7 @@ span {
 .slick-dots li button:before {
   color: #40322d;
   font-size: 15px;
-  top: 20px;
+  /* top: 20px; */
 }
 
 .slick-dotted.slick-slider {
@@ -592,8 +607,8 @@ span {
 
 .slick-next {
   padding-right: 3px;
-  top: 102%;
-  right: 35%;
+  /* top: 102%; */
+  right: 0;
   background-color: #e2dbd3;
   width: 40px;
   height: 40px;
@@ -606,8 +621,8 @@ span {
 .slick-prev {
   padding-left: 3px;
 
-  top: 102%;
-  left: 35%;
+  /* top: 102%; */
+  left: 0;
   background-color: #e2dbd3;
   width: 40px;
   height: 40px;
@@ -887,8 +902,8 @@ span {
 
 .W_btn {
   position: relative;
-  width: 300px;
-  height: 300px;
+  /* width: 300px;
+  height: 300px; */
   margin: 0 auto;
   display: block;
   border-radius: 12px;
@@ -914,9 +929,9 @@ span {
       */
 .W_btn img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  /* top: 0;
+  left: 0; */
+  /* width: 100%; */
   display: block;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -927,8 +942,8 @@ span {
 }
 /*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
 
-.W_btn .W_items_list1 img {
-  width: 52%;
+.W_btn .W_items_list img {
+  /* width: 52%; */
   /* top: 0; */
   opacity: 1;
 }
@@ -937,19 +952,20 @@ span {
   /* top: 0; */
   opacity: 1;
 }
-.W_btn:hover .W_items_list1 img {
+.W_btn:hover .W_items_list img {
   /* top: 100%; */
   opacity: 0;
 }
-.W_items_list1 {
+.W_items_list {
   /* 通常の設定 */
   transition: background-image 0.3s ease;
 }
 /* ----------------------------------------------- */
+.W_btn2 {
+  position: relative;
+}
+
 .W_btn2 img {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
   width: 100%;
   display: block;
   -webkit-transition: 0.4s ease-in-out;
@@ -957,13 +973,18 @@ span {
 }
 .W_btn2 > img {
   /* top: -100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  border-radius: 50%; /*imgのはみ出てる4つ角の白を消す*/
 }
 /*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
 
 .W_btn2 .W_items_list2-2 img {
   /* width: 52%; */
   /* top: 0; */
+  width: 100%;
   opacity: 1;
 }
 
@@ -981,18 +1002,10 @@ span {
   transition: background-image 0.3s ease;
 } /* ----------------------------------------------- */
 
-.W_items_list1 {
+.W_items_list {
   width: 100%;
-  height: 300px;
-  background-color: #e2dbd3;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.W_items_list2 {
-  width: 100%;
-  height: 300px;
+  /* height: 300px; */
+  aspect-ratio: 1;
   background-color: #e2dbd3;
   border-radius: 50%;
   display: flex;
@@ -1001,24 +1014,11 @@ span {
 }
 
 .W_items_list2-2 {
-  padding: 15px 0 0 15px;
+  padding: 5% 0 0 5%;
+  width: 55%;
 }
 
-/* .W_items_list2 img {
-  width: 56%;
-} */
-
-.W_items_list3 {
-  width: 100%;
-  height: 300px;
-  background-color: #e2dbd3;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.W_items_list3 img {
+.W_items_list img {
   width: 56%;
 }
 
