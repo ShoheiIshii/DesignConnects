@@ -110,6 +110,10 @@ body {
   box-shadow: 0px 4px 0px 0px #943e29;
 }
 
+.pc_nav a {
+  border-radius: 50%;
+}
+
 /*-------------------ファーストビュー--------------------*/
 
 .FV {
@@ -270,6 +274,14 @@ body {
 
 .color_other {
   color: #eb7f4c;
+  position: relative;
+}
+
+span.color_other::after {
+  content: "・・・";
+  position: absolute;
+  top: -30px;
+  left: 0;
 }
 
 .text-with-dots {
@@ -568,12 +580,14 @@ span {
 .Service_title p {
   padding-left: 32px;
   padding-bottom: 6px;
+  padding-right: 8%;
 }
 
 .Service_title2 {
   font-weight: bold;
   font-size: 64px;
   color: #47665e;
+  padding-left: 8%;
 }
 
 /*----------------Service slickカルーセル表示-------------------*/
@@ -592,6 +606,9 @@ span {
 
 .slick-dots {
   bottom: 10px;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .slick-dots li.slick-active button:before,
@@ -1002,6 +1019,47 @@ span {
   transition: background-image 0.3s ease;
 } /* ----------------------------------------------- */
 
+.W_btn3 {
+  position: relative;
+}
+
+.W_btn3 img {
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.W_btn3 > img {
+  /* top: -100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 50%; /*imgのはみ出てる4つ角の白を消す*/
+}
+/*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
+
+.W_btn3 .W_items_list img {
+  /* width: 52%; */
+  /* top: 0; */
+  /* width: 100%; */
+  opacity: 1;
+}
+
+.W_btn3:hover > img {
+  /* top: 0; */
+  opacity: 1;
+}
+.W_btn3:hover .W_items_list img {
+  /* top: 100%; */
+  opacity: 0;
+}
+
+.W_items_list3 {
+  /* 通常の設定 */
+  transition: background-image 0.3s ease;
+} /* ----------------------------------------------- */
+
 .W_items_list {
   width: 100%;
   /* height: 300px; */
@@ -1030,6 +1088,9 @@ span {
 .W_botan {
   display: flex;
   /* padding: 0 19% 0 33%; */
+}
+.W_botan a {
+  border-radius: 50%;
 }
 
 .W_botan p {
@@ -1094,6 +1155,9 @@ span {
   width: 250px;
   height: 250px;
 }
+/* .me_illust img {
+  width: 150%;
+} */
 
 .A {
   display: flex;
@@ -1103,6 +1167,8 @@ span {
 
 .A2 {
   padding-inline-start: 15px;
+  width: 90px;
+  height: 90px;
 }
 
 .A_dots {
@@ -1289,6 +1355,9 @@ textarea.c-form__input {
 .pc_nav2 ul {
   display: flex;
   gap: 48px;
+}
+.pc_nav2 ul a {
+  border-radius: 50%;
 }
 
 #pc_nav2 {

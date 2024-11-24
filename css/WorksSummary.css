@@ -105,12 +105,19 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
+  border-radius: 50%;
+
   background-color: #eb7f4c;
   color: #ffffff;
   box-shadow: 0px 4px 0px 0px #943e29;
 }
+.pc_nav a {
+  border-radius: 50%;
+}
 
 /*-------------------Works--------------------*/
+.WorksSummary {
+}
 
 .Works_title1 {
   display: flex;
@@ -131,57 +138,82 @@ body {
   padding-bottom: 6px;
 }
 
-.Works_slick {
-  max-width: 1000px;
-  margin: 0 auto;
+.Works_design slick-slide slick-active {
 }
-.Works_design {
-  width: 20%;
+
+.Works_slick {
+  max-width: 904px;
+  width: 100%;
+  /* margin: 0 auto; */
+  margin: 0 16.8% 0 16.8%;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
+  justify-content: space-between;
+  aspect-ratio: 1;
+  height: 280px;
+  align-items: center;
+}
+
+.Works_design {
+  text-align: center;
+}
+
+.Works_design img {
+  height: 90%;
+  width: 90%;
+  display: block;
   margin: 0 auto;
 }
 
 /*----------------slick画像のカルーセル表示-------------------*/
-
-.slick-dots {
-  bottom: 10px;
-}
-
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-  color: #fff;
-}
-
-.slick-dotted.slick-slider {
-  margin-bottom: 0;
+.Slick_navigation {
+  bottom: 160px;
+  height: 40px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .slick-next {
-  right: 22%;
+  padding-right: 3px;
+  background-color: #e2dbd3;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slick-prev {
-  left: 22%;
-  z-index: 99;
+  padding-left: 3px;
+  background-color: #e2dbd3;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slick-next:before {
   content: "";
   display: block;
-  width: 20px; /*ここのwidthとheightの役割は？？？？ デベロッパで確認したところ>の範囲指定のこと？*/
-  height: 20px;
-  border-top: 4px solid #fff;
-  border-right: 4px solid #fff;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #40322d;
+  border-right: 2px solid #40322d;
   transform: rotate(45deg);
 }
 
 .slick-prev:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
-  border-top: 4px solid #fff;
-  border-left: 4px solid #fff;
-  transform: rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #40322d;
+  border-right: 2px solid #40322d;
+  transform: rotate(225deg);
 }
 
 .slick-prev.slick-disabled:before,
@@ -208,6 +240,9 @@ body {
 .pc_nav2 ul {
   display: flex;
   gap: 48px;
+}
+.pc_nav2 ul a {
+  border-radius: 50%;
 }
 
 #pc_nav2 {

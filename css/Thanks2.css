@@ -33,6 +33,10 @@ a {
   /*色を消す*/
   color: inherit;
   transition: 0.25s;
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 a:hover {

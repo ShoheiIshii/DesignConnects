@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
@@ -36,8 +36,10 @@
                     <li><a href="#Works">Works</a></li>
                     <li><a href="#About me">About me</a></li>
                 </ul>
-                <div class="Contact"> <a href="#Contact">Contact</a>
-                </div>
+                <a href="#Contact_title">
+                    <div class="Contact">Contact
+                    </div>
+                </a>
 
             </nav>
         </div>
@@ -45,18 +47,41 @@
 
     </header>
 
-    <section>
-        <div class="Works_title1">
-            <h2 class="Works_title2">Works</h2>
-            <p>syo portfolio</p>
+    <section class="WorksSummary">
+        <div id="Design_title">
+            <div class="Works_title1">
+                <h2 class="Works_title2">Works</h2>
+                <p>syo portfolio</p>
+            </div>
         </div>
 
         <div class="Works_slick">
             <div class="Works_design">
                 <img src="./images/Design1_Works_Summary.png" alt="Works_slide1">
+            </div>
+            <div class="Works_design">
                 <img src="./images/Design2_Works_Summary.png" alt="Works_slide1">
+            </div>
+            <div class="Works_design">
                 <img src="./images/Design3_Works_Summary.png" alt="Works_slide1">
             </div>
+            <div class="Works_design">
+                <img src="./images/Design4_Works_Summary.png" alt="Works_slide1">
+            </div>
+            <div class="Works_design">
+                <img src="./images/Design5_Works_Summary.png" alt="Works_slide1">
+            </div>
+            <div class="Works_design">
+                <img src="./images/Design6_Works_Summary.png" alt="Works_slide1">
+            </div>
+            <div class="Works_design">
+                <img src="./images/Design7_Works_Summary.png" alt="Works_slide1">
+            </div>
+
+        </div>
+
+        <div class="Slick_navigation">
+            <div class="Slick_arrows"></div>
         </div>
 
     </section>
@@ -71,11 +96,21 @@
 
                 <nav class="pc_nav2">
                     <ul>
-                        <li id="pc_nav2"><a href="#Service">Service</a></li>
-                        <li id="pc_nav2"><a href="#Skill">Skill</a></li>
-                        <li id="pc_nav2"><a href="#Works">Works</a></li>
-                        <li id="pc_nav2"><a href="#About me">About me</a></li>
-                        <li class="Contact2"> <a href="#Contact">Contact</a></li>
+                        <a href="#Service">
+                            <li id="pc_nav2">Service</li>
+                        </a>
+                        <a href="#Skill">
+                            <li id="pc_nav2">Skill</li>
+                        </a>
+                        <a href="#Works">
+                            <li id="pc_nav2">Works</li>
+                        </a>
+                        <a href="#About me">
+                            <li id="pc_nav2">About me</li>
+                        </a>
+                        <a href="#Contact_title">
+                            <li class="Contact2">Contact</li>
+                        </a>
                     </ul>
 
                 </nav>
@@ -106,16 +141,21 @@
     </section>
 
     <script>
-        $('.Works_slick').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear',
-            // appendArrows: $('.Slick_arrows'),
-            // appendDots: $('.Slick_dots'),
-        });
 
+        $('.Works_slick').slick({
+            dots: false,
+            infinite: true,
+            // fade: true,
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // autoplay: true,
+            // autoplaySpeed: 3500, 
+            speed: 600,
+            appendArrows: $('.Slick_arrows'),
+            // appendDots: $('.Slick_dots'),
+
+        });
 
 
     </script>
