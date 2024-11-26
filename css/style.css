@@ -1523,6 +1523,7 @@ span {
 }
 
 .c-form__submit {
+  display: flex;
 }
 
 button[type="submit"] {
@@ -1533,14 +1534,32 @@ button[type="submit"] {
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 90px;
-  height: 90px;
+  width: 97px;
+  height: 96px;
   border-radius: 50%;
   background-color: #47665e;
   box-shadow: 0px 4px 0px 0px #2d453f;
 }
 
 button[type="submit"]:hover {
+  background-color: #eb7f4c; /* ホバー時の色 */
+}
+
+button[type="back"] {
+  color: white; /* テキストの色 */
+  border: none; /* ボーダーを削除 */
+  cursor: pointer; /* マウスオーバー時のカーソル */
+  transition: background-color 0.3s; /* 色変更の滑らかさ */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background-color: #47665e;
+  box-shadow: 0px 4px 0px 0px #2d453f;
+}
+
+button[type="back"]:hover {
   background-color: #eb7f4c; /* ホバー時の色 */
 }
 
