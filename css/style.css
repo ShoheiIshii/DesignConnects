@@ -452,7 +452,33 @@ circle:hover {
   top: 26%;
   left: 19.7%;
   width: 3%;
+  /* transform: rotateY(center); 3DのY軸(垂直)で回転 */
+  /* transform-origin: center; */
+  /* animation:fu 4s linear infinite;　infiniteで永続 */
 }
+
+/* .Star2 {
+  visibility: hidden;
+}
+
+.Star1 {
+  animation: Star 4s infinite;
+}
+
+@keyframes Star {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
 
 .hand {
   display: flex;
@@ -1612,6 +1638,12 @@ span {
 }
 
 .c-form__submit {
+  display: flex;
+  max-width: 427px;
+  padding-top: 24px;
+}
+
+.c-form__submit2 {
   display: flex;
   justify-content: space-evenly;
   max-width: 427px;
