@@ -61,8 +61,8 @@
                     </ul>
 
                     <ul class="c2">
-                        <li class="circle4"><a href="#About me">About me</a></li>
-                        <li class="circle4"><a href="#Contact_title">
+                        <li class="circle3"><a href="#About me">About me</a></li>
+                        <li class="circle3"><a class="Contact_link" href="#Contact_title">
                                 <div class="Contact_hamburger">Contact</div>
                             </a></li>
                     </ul>
@@ -294,8 +294,8 @@
                         <img src="./images/Coding.svg" alt="Coding">
                     </div>
 
-                    <p>HTML / CSS / Java Script / jQuery </p>
-                    <p class="St1">LPやコーポレートサイトのコーディングをします。
+                    <p class="Skill_content">HTML / CSS / Java Script / jQuery </p>
+                    <p class="Skill_content2">LPやコーポレートサイトのコーディングをします。
                         ブランドの身体となるwebサイト作りについては、好ビジュアルと利便性の良さを両立させ、
                         高い熟読率とCTR(クリック率)を目指します。露出に重要なSEO対策のご相談もお承ります。
                     </p>
@@ -308,8 +308,8 @@
                             <img src="./images/Design.svg" alt="Design">
                         </div>
                     </div>
-                    <p>Illustrator / Photoshop / Figma</p>
-                    <p class="St2">HPやLP、バナー広告などのデジタルデザインから、チラシやパンフレットなどの印刷物まで制作します。
+                    <p class="Skill_content">Illustrator / Photoshop / Figma</p>
+                    <p class="Skill_content3">HPやLP、バナー広告などのデジタルデザインから、チラシやパンフレットなどの印刷物まで制作します。
                         広告において重要な、潜在層/顕在層などターゲット層別のデザインの考案・検証も。
                         Figmaを用いた共同制作もお承ります。</p>
                 </div>
@@ -320,8 +320,8 @@
                     <div class="items_list3b">
                         <img src="./images/Illustration.svg" alt="Illustration">
                     </div>
-                    <p>CLIP STUDIO PAINT / Photoshop</p>
-                    <p class="St3">0から柔軟に、ご要望のイメージをデジタルイラストで表現します。
+                    <p class="Skill_content">CLIP STUDIO PAINT / Photoshop</p>
+                    <p class="Skill_content4">0から柔軟に、ご要望のイメージをデジタルイラストで表現します。
                         デザインと同時発注し、より色濃い世界観の表現も可能です。細かいパーツ単位のイラストからお承ります。</p>
                 </div>
 
@@ -335,11 +335,13 @@
                     <img src="./images/Others.svg" alt="Others">
                 </div>
                 <!-- <picture> -->
+                <div class="Others_content">
+                    <p class="Skill_content">Lumafusion / Photoshop</p>
+                    <p>グラフィックレタッチ/動画編集
+                        スマホでの写真撮影　etc..
+                    </p>
+                </div>
 
-                <p>Lumafusion / Photoshop</p>
-                <p>グラフィックレタッチ/動画編集
-                    スマホでの写真撮影　etc..
-                </p>
             </div>
 
             <p id="Wacom">制作環境 : Wacom cintip 22 液晶タブレット </p>
@@ -442,15 +444,15 @@
                 <div class="Aboutme_text">
                     <h2 class="Aboutme_title">About me</h2>
 
-                    <p>Designer＆Illustrator</p>
-                    <p>syo</p>
-                    <p>石井翔平 | Shohei Ishii</p>
+                    <p class="Aboutme_content">Designer＆Illustrator</p>
+                    <span class="Aboutme_name">syo</span>
+                    <p class="Aboutme_content">石井翔平 | Shohei Ishii</p>
                     <p>埼玉県　1995年生まれ</p>
-                    <p>好きなこと</p>
+                    <p class="Aboutme_content">好きなこと</p>
                     <p>ヨーロッパ旅/イラスト/カフェ巡り etc...</p>
                     <p> ここから生まれるコミュニケーションや、様々なモノで
                         デザインを味わうことがずっと好きです。</p>
-                    <p>大事にしていること</p>
+                    <p class="Aboutme_content">大事にしていること</p>
                     <p>より良い「コミュニケーション」をすることです。</p>
 
                     <div class="A">
@@ -620,7 +622,7 @@
                     class="readonly-input" placeholder="簡単なご依頼内容でも問題ございません。" required="required"></textarea>
             </div>
             <div class="c-form__submit">
-                <button type="back" onclick="window.history.back()">修正する</button>
+                <button type="button" class="fix_btn">修正する</button>
                 <button type="submit">送信</button>
             </div>
         </form>
@@ -684,6 +686,12 @@
                     $('#field-mail').val(mail)
                     $('#field-date').val(date)
                     $('#field-message').val(message)
+
+                    // 修正ボタンがクリックされたら
+                    $('.fix_btn').on('click', function () {
+                        $('#container').show() // サイトのコンテンツを表示
+                        $('#confirm').hide() // 確認画面の非表示
+                    })
                 }
             })
         })

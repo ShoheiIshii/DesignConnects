@@ -103,11 +103,13 @@ body {
 .pc_nav ul li:hover {
   background-color: #f8f6f0; /* ホバー時の色 */
   border-radius: 50%;
-  /* color: #fff; */
   border-color: #f8f6f0; /* 枠線の色を背景と同じに? */
-  border: none;
   /* transition: all 0.5s ease; */
   transition: background-color 0.5s ease;
+}
+
+.pc_nav ul li:hover a {
+  border: none;
 }
 
 .Contact {
@@ -242,14 +244,14 @@ body {
   background: #e2dbd3;
   /*動き*/
   transition: all 0.6s;
+  background-image: url(../images/hamburger.svg); /* 画像のURLを指定 */
+  background-repeat: no-repeat; /* 画像の繰り返しを指定 */
+  background-position: center bottom; /* 画像の横・縦の位置を指定*/
 }
 
 /*アクティブクラスがついたら位置を0に*/
 #sp_nav.panelactive {
   top: 0;
-  background-image: url(../images/hamburger.svg); /* 画像のURLを指定 */
-  background-repeat: no-repeat; /* 画像の繰り返しを指定 */
-  background-position: center bottom; /* 画像の横・縦の位置を指定*/
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -302,6 +304,10 @@ body {
   display: flex;
 }
 
+#sp_nav li a.Contact_link {
+  border: none;
+}
+
 .Links {
   font-weight: 500;
   font-size: 18px;
@@ -315,19 +321,22 @@ body {
   /* top: 25%; */
   /* width: 75px; */
 }
+
 .circle2 {
-  /* width: 75px; */
   gap: 400px;
+  /* width: 75px; */
   /* position: absolute;
   top: 30%;
   left: 10%; */
 }
+
 /* .circle3 {
   position: absolute;
   top: 30%;
   right: 10%;
   width: 75px;
 } */
+
 .c1 {
   width: 330px;
   padding-top: 8px;
@@ -338,7 +347,7 @@ body {
   padding-top: 35px;
   display: flex;
 }
-.circle4 {
+.circle3 {
   /* width: 75px; */
   gap: 200px;
   /* padding-left: -200px; */
@@ -347,15 +356,14 @@ body {
   top: 50%;
   left: 130px; */
 }
+
 /* .circle5{
   width: 75px;
   padding-right: 10px;
   /* padding-left: 200px; */
 /* position: absolute;
   top: 50%;
-} 
-right: 130px; 
-*/
+} */
 
 .Contact_hamburger {
   align-items: center;
@@ -410,7 +418,7 @@ right: 130px;
 }
 
 .FV_illust {
-  padding: 30px 70px 0 0;
+  padding: 30px 70px 0 50px;
 }
 
 .catch_copy_English {
@@ -1027,9 +1035,13 @@ span {
   line-height: 24px;
 }
 
-.St1 {
+.Skill_content {
+  font-weight: 700;
+}
+.Skill_content2 {
   padding-bottom: 67px;
 }
+
 .items_list2 p {
   padding-top: 24px;
   padding-right: 26px;
@@ -1037,7 +1049,7 @@ span {
   line-height: 24px;
 }
 
-.St2 {
+.Skill_content3 {
   padding-bottom: 32%;
 }
 .items_list3 p {
@@ -1047,7 +1059,7 @@ span {
   line-height: 24px;
 }
 
-.St3 {
+.Skill_content4 {
   padding-bottom: 40%;
 }
 
@@ -1102,25 +1114,33 @@ span {
   background-color: #e2dbd3;
   border-radius: 10px;
   font-size: 16px;
-  /* padding-bottom: 45px; */
   display: flex;
 }
 
 .items_list4b {
-  width: 100%;
+  width: 80%;
   height: 154px;
-  margin: 24px 9% 24px 0;
+  margin: 24px 5.6% 24px 0;
   background-color: #f8f6f0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3% 0 3%;
+  padding: 0 1.5% 0 1.5%;
+}
+
+.items_list4b img {
 }
 
 .items_list4 p {
   padding-top: 10px;
   line-height: 24px;
+}
+
+.Others_content {
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-right: 5%;
 }
 
 #Wacom {
@@ -1413,6 +1433,7 @@ span {
 
 .Aboutme_text {
   max-width: 400px;
+  width: 50%;
 }
 
 .Aboutme_title {
@@ -1423,10 +1444,26 @@ span {
   color: #47665e;
 }
 
+.Aboutme_name {
+  font-weight: 700;
+  font-size: 40px;
+  padding: 8px 0 8px 0;
+  color: #00489d;
+}
+.Aboutme_content {
+  font-weight: 700;
+  padding-top: 16px;
+  line-height: 2;
+}
+.Aboutme_text p {
+  line-height: 1.5;
+}
+
 .me_illust {
   padding-top: 300px;
-  width: 250px;
-  height: 250px;
+  max-width: 250px;
+  width: 50%;
+  /* height: 250px; */
 }
 /* .me_illust img {
   width: 100%;
@@ -1465,6 +1502,10 @@ span {
 }
 
 /*-------------------Contact--------------------*/
+/* 初期状態で確認画面非表示 */
+#confirm {
+  display: none;
+}
 
 .Contact_content {
   display: flex;
@@ -1518,6 +1559,7 @@ span {
 
 .check {
   padding: 32px 40% 200px 35%;
+  width: 100%;
   /* width: 90px;
   margin: 0 auto; */
 }
@@ -1622,8 +1664,7 @@ textarea.c-form__input {
   color: #afafaf;
 }
 
-/* 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .c-form__item {
     flex-wrap: nowrap;
   }
