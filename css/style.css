@@ -447,14 +447,25 @@ circle:hover {
   /* box-sizing: border-box; */
 }
 
+.FV_illust {
+  position: relative; /* 親要素 */
+}
+
 .Star {
+  /*☆は握手のイラストに含める形で作ると一緒にずれずに固定できる　paddingなどは別の要素で補ったり　こういう時は、画像そのものが中心がズレている可能性もあるので注意（今回は5本線がズレて真ん中の基準が変わっていた）*/
   position: absolute;
-  top: 26%;
-  left: 19.7%;
-  width: 3%;
+  left: 50%;
+  bottom: 103%;
+  width: 8%;
+  transform: translateX(-50%);
+  padding-right: 2%;
   /* transform: rotateY(center); 3DのY軸(垂直)で回転 */
   /* transform-origin: center; */
   /* animation:fu 4s linear infinite;　infiniteで永続 */
+}
+
+.Star img {
+  width: 100%;
 }
 
 /* .Star2 {
@@ -481,12 +492,14 @@ circle:hover {
 } */
 
 .hand {
+  padding-top: 30px;
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
 }
 
-.FV_illust {
-  padding: 30px 70px 0 50px;
+.catch {
+  padding-left: 70px;
 }
 
 .catch_copy_English {

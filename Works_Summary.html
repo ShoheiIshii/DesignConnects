@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="Works_slick0">
-            <div class="Works_slick">
+            <div class="Works_slick design_slick">
                 <div class="Works_design">
                     <img src="./images/Design1_Works_Summary.png" alt="Works_slide1">
                 </div>
@@ -82,14 +82,14 @@
 
         </div>
         <div class="Slick_navigation">
-            <div class="Slick_arrows"></div>
+            <div class="Slick_arrows design_arrows"></div>
         </div>
 
 
 
         <div class="Works_slick0">
             <div class="Works_slick">
-                <div class="Works_design">
+                <div class="Works_design coding_slick">
                     <img src="./images/Coding1_Works_Summary.png" alt="Works_slide1">
                 </div>
                 <div class="Works_design">
@@ -114,7 +114,7 @@
 
 
         <div class="Slick_navigation">
-            <div class="Slick_arrows"></div>
+            <div class="Slick_arrows coding_arrows"></div>
         </div>
 
     </section>
@@ -124,7 +124,7 @@
 
     <div class="Works_slick0">
         <div class="Works_slick">
-            <div class="Works_design">
+            <div class="Works_design illust_slick">
                 <img src="./images/illust1_Works_Summary.png" alt="Works_slide1">
             </div>
             <div class="Works_design">
@@ -152,7 +152,7 @@
 
 
     <div class="Slick_navigation">
-        <div class="Slick_arrows"></div>
+        <div class="Slick_arrows illust_arrows"></div>
     </div>
 
     <section>
@@ -209,7 +209,7 @@
 
     <script>
 
-        $('.Works_slick').slick({
+        $('.design_slick').slick({
             dots: false,
             infinite: true,
             // fade: true,
@@ -219,7 +219,35 @@
             autoplay: true,
             autoplaySpeed: 3500,
             speed: 600,
-            appendArrows: $('.Slick_arrows'),
+            appendArrows: $('.Slick_arrows design_arrows'),
+            // appendDots: $('.Slick_dots'),
+
+        });
+        $('.coding_slick').slick({
+            dots: false,
+            infinite: true,
+            // fade: true,
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            speed: 600,
+            appendArrows: $('.Slick_arrows coding_arrows'),
+            // appendDots: $('.Slick_dots'),
+
+        });
+        $('.illust_slick').slick({
+            dots: false,
+            infinite: true,
+            // fade: true,
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            speed: 600,
+            appendArrows: $('.Slick_arrows illust_arrows'),
             // appendDots: $('.Slick_dots'),
 
         });
