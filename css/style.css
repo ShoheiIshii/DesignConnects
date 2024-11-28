@@ -113,15 +113,33 @@ body {
   border: none;
 }
 /*----------------円を描くアニメーション-----------------*/
-svg {
+.pc_nav svg {
   transform: rotate(-90deg);
+  fill: transparent;
+}
+.circle0 {
+  position: relative;
+}
+
+.circle0 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+circle {
+  fill: transparent;
+  stroke: #4fa8df;
+  stroke-width: 4;
+  stroke-dasharray: 377 377; /*円周の長さ*/
 }
 
 circle:hover {
   fill: transparent;
   stroke: #4fa8df;
   stroke-width: 4;
-  animation: circle 1s infinite;
+  animation: circle 1s;
 }
 
 @keyframes circle {
@@ -431,8 +449,9 @@ circle:hover {
 
 .Star {
   position: absolute;
-  top: 265px;
-  left: 355px;
+  top: 26%;
+  left: 19.7%;
+  width: 3%;
 }
 
 .hand {
@@ -693,7 +712,7 @@ span.color_other::after {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
-  width: 120x;
+  width: 120px;
   line-height: 24px;
 }
 
@@ -1603,7 +1622,7 @@ span {
   display: flex;
 } */
 
-button[type="edit"] {
+.fix_btn {
   border: none; /* ボーダーを削除 */
   cursor: pointer; /* マウスオーバー時のカーソル */
   transition: background-color 0.3s; /* 色変更の滑らかさ */
@@ -1634,8 +1653,11 @@ button[type="submit"] {
   background-color: #47665e;
   box-shadow: 0px 4px 0px 0px #2d453f;
   flex-direction: column;
-  padding-top: 8px;
   gap: 8px;
+}
+
+button[type="submit"].confirm_send {
+  padding-top: 8px;
 }
 
 button[type="submit"]:hover {
@@ -1830,12 +1852,11 @@ textarea.c-form__input {
     padding: initial;
   }
 
-
-  .A{
+  .A {
     padding-inline-start: initial;
   }
 
-  .A2{
+  .A2 {
     padding-inline-start: initial;
     margin: 0 auto;
   }
@@ -1850,23 +1871,23 @@ textarea.c-form__input {
 
     text-align: center;
     margin: 0 auto;
-  width: auto;
+    width: auto;
   }
 
   /*-------------------SP　Contact--------------------*/
 
-.Contact_title{
-  font-size: 40px;
-text-align: center;
-}
+  .Contact_title {
+    font-size: 40px;
+    text-align: center;
+  }
 
-.Contact_text {
-  padding-left: 10%; 
-  padding-right: 7.5%;
-  width: auto;
-  /* width: 80%;
+  .Contact_text {
+    padding-left: 10%;
+    padding-right: 7.5%;
+    width: auto;
+    /* width: 80%;
   margin: 0 auto; */
-}
+  }
 
   .Contact_content {
     flex-direction: column;
@@ -1876,4 +1897,5 @@ text-align: center;
   .Contact_sheet {
     padding-left: 9%;
     padding-top: 32px;
+  }
 }

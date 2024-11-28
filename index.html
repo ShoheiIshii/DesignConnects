@@ -40,9 +40,12 @@
                         <li><a href="#About me">About me</a></li>
                     </ul>
                     <!------------------円を描くアニメーション------------------->
-                    <svg width="124" height="124">About me
-                        <circle cx="62" cy="62" r="60" />
-                    </svg>
+                    <a class="circle0">
+                        <svg width="75" height="75">
+                            <circle cx="37.5" cy="37.5" r="35.5" />
+                        </svg>
+                        <span>Service</span>
+                    </a>
                     <!--------------------------------------------------------->
 
                     <a href="#Contact_title">
@@ -81,13 +84,14 @@
 
 
         <section class="FV">
-            <div class="Star">
-                <img src="./images/Star.svg" alt="FV_Star">
-            </div>
+
 
             <div class="FV_content">
                 <div class="hand">
                     <div class="FV_illust">
+                        <div class="Star">
+                            <img src="./images/Star.svg" alt="FV_Star">
+                        </div>
                         <img src="./images/FV.svg" alt="FV_illust">
                     </div>
                 </div>
@@ -180,7 +184,7 @@
 
 
 
-        <section class="Service">
+        <section id="Service" class="Service">
             <div class="Service_title">
                 <h2 class="Service_title2">Service</h2>
 
@@ -631,9 +635,10 @@
                     class="readonly-input" placeholder="簡単なご依頼内容でも問題ございません。" required="required"></textarea>
             </div>
             <div class="c-form__submit">
-                <button type="edit" class="fix_btn"><img src="./images/Contact_edit.svg"
+                <button type="button" class="fix_btn"><img src="./images/Contact_edit.svg"
                         alt="Contact_send">修正する</button>
-                <button type="submit"><img src="./images/Contact_send.svg" alt="Contact_send">送信</button>
+                <button class="confirm_send" type="submit"><img src="./images/Contact_send.svg"
+                        alt="Contact_send">送信</button>
             </div>
         </form>
     </div>
@@ -701,6 +706,12 @@
                     $('.fix_btn').on('click', function () {
                         $('#container').show() // サイトのコンテンツを表示
                         $('#confirm').hide() // 確認画面の非表示
+                        let contactTop = $('.Contact_content').offset().top
+                        $('html, body').css('scroll-behavior', 'auto').scrollTop(contactTop)
+                        // 指定位置までスクロール
+                        setTimeout(() => {
+                            $("html, body").css("scroll-behavior", "smooth");
+                        }, 0);
                     })
                 }
             })
