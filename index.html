@@ -39,6 +39,12 @@
                         <li><a href="#Works">Works</a></li>
                         <li><a href="#About me">About me</a></li>
                     </ul>
+                    <!------------------円を描くアニメーション------------------->
+                    <svg width="124" height="124">About me
+                        <circle cx="62" cy="62" r="60" />
+                    </svg>
+                    <!--------------------------------------------------------->
+
                     <a href="#Contact_title">
                         <div class="Contact">Contact
                         </div>
@@ -444,16 +450,19 @@
                 <div class="Aboutme_text">
                     <h2 class="Aboutme_title">About me</h2>
 
-                    <p class="Aboutme_content">Designer＆Illustrator</p>
-                    <span class="Aboutme_name">syo</span>
+                    <div id="Aboutme">
+                        <p class="Aboutme_content0">Designer＆Illustrator</p>
+                        <span class="Aboutme_name">syo</span>
+                    </div>
+
                     <p class="Aboutme_content">石井翔平 | Shohei Ishii</p>
-                    <p>埼玉県　1995年生まれ</p>
+                    <p class="Aboutme_content2">埼玉県　1995年生まれ</p>
                     <p class="Aboutme_content">好きなこと</p>
-                    <p>ヨーロッパ旅/イラスト/カフェ巡り etc...</p>
-                    <p> ここから生まれるコミュニケーションや、様々なモノで
+                    <p class="Aboutme_content2">ヨーロッパ旅/イラスト/カフェ巡り etc...</p>
+                    <p class="Aboutme_content2"> ここから生まれるコミュニケーションや、様々なモノで
                         デザインを味わうことがずっと好きです。</p>
                     <p class="Aboutme_content">大事にしていること</p>
-                    <p>より良い「コミュニケーション」をすることです。</p>
+                    <p class="Aboutme_content2">より良い「コミュニケーション」をすることです。</p>
 
                     <div class="A">
                         <div class="A_dots">
@@ -465,13 +474,13 @@
                             <p>More!</p>
                         </div>
                     </div>
+
+
                 </div>
-
-
-
                 <div class="me_illust">
                     <img src="./images/Aboutme.png" alt="About me">
                 </div>
+
             </div>
 
         </section>
@@ -622,8 +631,9 @@
                     class="readonly-input" placeholder="簡単なご依頼内容でも問題ございません。" required="required"></textarea>
             </div>
             <div class="c-form__submit">
-                <button type="button" class="fix_btn">修正する</button>
-                <button type="submit">送信</button>
+                <button type="edit" class="fix_btn"><img src="./images/Contact_edit.svg"
+                        alt="Contact_send">修正する</button>
+                <button type="submit"><img src="./images/Contact_send.svg" alt="Contact_send">送信</button>
             </div>
         </form>
     </div>
