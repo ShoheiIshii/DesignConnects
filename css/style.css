@@ -1904,6 +1904,7 @@ textarea.c-form__input {
     width: 64%;
     margin: 0 auto;
     line-height: 1.5;
+    padding-bottom: 32px;
   }
 
   .onayami_text_sp {
