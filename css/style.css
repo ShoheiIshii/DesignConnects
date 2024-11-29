@@ -769,6 +769,19 @@ span.color_other::after {
   height: 130px;
 }
 
+@media screen and (min-width: 731px) {
+  .a_sp img {
+    display: none;
+  }
+
+  .b_sp img {
+    display: none;
+  }
+  .c_sp img {
+    display: none;
+  }
+}
+
 .fluid2 {
   position: absolute;
   left: 800px;
@@ -1049,9 +1062,10 @@ span {
   align-items: flex-end;
 }
 
-.Skill_title p {
+.Skill_title span {
   padding-left: 32px;
   padding-bottom: 6px;
+  line-height: 1.5;
 }
 
 .Skill_title2 {
@@ -1877,6 +1891,101 @@ textarea.c-form__input {
   padding-top: 34px;
 }
 
+/*----------------★SP版worry 730px以下表示★-------------------*/
+
+/*-------------------SP　worry--------------------*/
+
+@media screen and (max-width: 730px) {
+  .onayami {
+    padding: initial;
+  }
+  .onayami_title {
+    font-size: 20px;
+    width: 64%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .onayami_text_sp {
+    display: block;
+  }
+
+  span.color_other::after {
+    top: -20px;
+  }
+
+  .worry {
+    flex-direction: column;
+    max-width: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .worry_list {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .worry_text {
+    width: 66%;
+    top: 70%;
+  }
+  .worry_text2 {
+    width: 82%;
+    top: 66%;
+  }
+  .worry_text3 {
+    width: 50%;
+    top: 70%;
+  }
+
+  .afluid2 {
+    display: none;
+  }
+  .afluid3 {
+    display: none;
+  }
+
+  .a {
+    display: none;
+  }
+
+  .b {
+    display: none;
+  }
+
+  .c {
+    display: none;
+  }
+
+  .a_sp {
+    top: 13%;
+    height: 80px;
+    position: absolute;
+  }
+  .a_sp img {
+    width: 40%;
+  }
+
+  .b_sp {
+    top: 10%;
+    left: 33%;
+    height: 80px;
+    position: absolute;
+  }
+  .b_sp img {
+    width: 88%;
+  }
+
+  .c_sp {
+    top: 16%;
+    left: 34%;
+    height: 80px;
+    position: absolute;
+  }
+  .c_sp img {
+    width: 90%;
+  }
+}
 /*----------------★SP版767px以下表示★-------------------*/
 
 @media screen and (max-width: 767px) {
@@ -1884,10 +1993,131 @@ textarea.c-form__input {
     display: none;
   } */
 
+  /*-------------------SP　Service--------------------*/
+  .Service {
+    padding-top: 88px;
+  }
+
+  .Service_title {
+    flex-direction: column;
+    padding: 0 0 16px 0;
+    align-items: center;
+  }
+  .Service_title2 {
+    font-size: 40px;
+    flex-direction: column;
+    padding-left: initial;
+    padding-bottom: 8px;
+  }
+  .Service_title p {
+    padding: initial;
+  }
+
+  /*-------------------SP　Skill--------------------*/
+
+  .Skill_title {
+    padding-top: 112px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .Skill_title2 {
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .Skill_text_sp {
+    display: block;
+  }
+
+  .Skill_title span {
+    text-align: center;
+    padding: 8px 15% 0 15%;
+  }
+
+  .Skill_items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 71%;
+  }
+
+  .items_list1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .items_list2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .items_list3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .items_list4 {
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .items_list4b {
+    margin: 0 auto;
+    padding: initial;
+  }
+  .items_list4b img {
+    max-width: 90%;
+  }
+  .items_list4 h3 {
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 32px 0 16px 0;
+  }
+
+  .Skill_items h3 {
+    font-size: 32px;
+    padding: 32px 0 16px 0;
+  }
+
+  .items_list1 p {
+    text-align: center;
+  }
+  .Skill_content2 {
+    padding-bottom: 40px;
+  }
+  .Skill_content3 {
+    padding-bottom: 40px;
+  }
+  .Skill_content4 {
+    padding-bottom: 40px;
+  }
+
+  .Others_content {
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 40px;
+  }
+
+  #Wacom {
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+
   /*-------------------SP　Works--------------------*/
+  .Works_title2 {
+    font-size: 40px;
+    padding-top: 112px;
+  }
   .Works_items {
     flex-direction: column;
-    padding: 48px 17% 0 17%;
+    padding: 32px 17% 0 17%;
   }
 
   .a_W_items_list1 {
@@ -1921,6 +2151,7 @@ textarea.c-form__input {
 
   .Aboutme_title {
     font-size: 40px;
+    padding-top: 112px;
   }
 
   .Aboutme_content {
