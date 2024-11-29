@@ -1525,6 +1525,12 @@ span {
   color: #47665e;
 }
 
+@media screen and (min-width: 768px) {
+  .me_illust_sp {
+    display: none;
+  }
+}
+
 .Aboutme_name {
   font-weight: 700;
   font-size: 40px;
@@ -1878,6 +1884,39 @@ textarea.c-form__input {
     display: none;
   } */
 
+  /*-------------------SP　Works--------------------*/
+  .Works_items {
+    flex-direction: column;
+    padding: 48px 17% 0 17%;
+  }
+
+  .a_W_items_list1 {
+    padding-top: initial;
+    order: 2;
+    width: 67%;
+  }
+  .a_W_items_list2 {
+    padding-top: initial;
+    order: 1;
+    width: 67%;
+  }
+  .a_W_items_list3 {
+    order: 3;
+    width: 67%;
+  }
+
+  .W {
+    display: none;
+  }
+
+  .W2 {
+    display: none;
+  }
+
+  .W3 {
+    display: none;
+  }
+
   /*-------------------SP　About me--------------------*/
 
   .Aboutme_title {
@@ -1889,6 +1928,14 @@ textarea.c-form__input {
   }
   .Aboutme_content2 {
     display: none;
+  }
+
+  .me_illust {
+    display: none;
+  }
+  .me_illust_sp {
+    width: 62.5%;
+    margin: 0 auto;
   }
 
   .Aboutme {
@@ -1922,6 +1969,7 @@ textarea.c-form__input {
   /*-------------------SP　Contact--------------------*/
 
   .Contact_title {
+    padding-top: 112px;
     font-size: 40px;
     text-align: center;
   }
@@ -1939,8 +1987,18 @@ textarea.c-form__input {
     gap: 5%;
     justify-content: center;
   }
+
+  .c-form {
+    max-width: 388px;
+  }
+
   .Contact_sheet {
     padding-left: 9%;
     padding-top: 32px;
+    /* margin-left: 6%; */
+  }
+
+  .check {
+    width: 100px;
   }
 }
