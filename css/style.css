@@ -126,29 +126,30 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: 500;
 }
 
 circle {
   fill: transparent;
-  stroke: #4fa8df;
-  stroke-width: 4;
-  stroke-dasharray: 377 377; /*円周の長さ*/
+  stroke: #40322d;
+  stroke-width: 1;
+  stroke-dasharray: 250 250; /*円周の長さ*/
 }
 
 circle:hover {
   fill: transparent;
-  stroke: #4fa8df;
-  stroke-width: 4;
-  animation: circle 1s;
+  stroke: #404040;
+  stroke-width: 1;
+  animation: circle 1.5s;
 }
 
 @keyframes circle {
   0% {
-    stroke-dasharray: 0 377;
+    stroke-dasharray: 0 250;
   }
   99.9%,
   to {
-    stroke-dasharray: 377 377;
+    stroke-dasharray: 250 250;
   }
 }
 /*--------------------------------------*/
@@ -203,6 +204,7 @@ circle:hover {
   .header_wrap {
     padding: 4px 0 8px 0;
     align-items: center;
+    position: relative;
   }
 }
 
@@ -288,6 +290,10 @@ circle:hover {
   background-image: url(../images/hamburger.svg); /* 画像のURLを指定 */
   background-repeat: no-repeat; /* 画像の繰り返しを指定 */
   background-position: center bottom; /* 画像の横・縦の位置を指定*/
+}
+
+#aaa {
+  width: 100%;
 }
 
 /*アクティブクラスがついたら位置を0に*/
@@ -436,7 +442,9 @@ circle:hover {
   gap: 16px;
   width: 116px;
   margin: 0 auto;
-  padding-top: 30px;
+  top: 16px;
+  left: 16px;
+  position: absolute;
 }
 
 @media screen and (min-width: 851px) {
@@ -577,7 +585,7 @@ circle:hover {
   /*描画位置※位置は適宜調整してください*/
   position: absolute;
   top: 780px;
-  left: 50%;
+  left: 49%;
 }
 
 /*Scrollテキストの描写*/
@@ -983,6 +991,7 @@ span {
 
 .Slick_navigation {
   height: 40px;
+  top: -20px;
   position: relative;
   width: 255px;
   margin: 0 auto;
@@ -1629,6 +1638,8 @@ span {
   display: flex;
   gap: 5%;
   justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .Contact_sheet {
@@ -1647,7 +1658,6 @@ span {
 }
 
 .Contact_text {
-  padding-left: 5%;
   width: 32%;
 }
 
@@ -1672,11 +1682,8 @@ span {
   text-decoration-thickness: 1px; /* 下線の太さ */
 }
 
-.Contact_sheet {
-}
-
 .check {
-  padding: 32px 40% 200px 35%;
+  padding: 32px 0 200px 0;
   width: 100%;
   /* width: 90px;
   margin: 0 auto; */
@@ -1686,12 +1693,12 @@ span {
   display: flex;
   max-width: 427px;
   padding-top: 24px;
+  justify-content: center;
 }
 
 .c-form__submit2 {
   display: flex;
   justify-content: space-evenly;
-  max-width: 427px;
   padding-top: 24px;
 }
 
@@ -1766,6 +1773,7 @@ button[type="back"]:hover {
 .c-form {
   max-width: 470px;
   margin: 0 auto;
+  padding-top: 5px;
 }
 .c-form__item {
   /* justify-content: space-evenly; */
@@ -1782,12 +1790,13 @@ button[type="back"]:hover {
   line-height: 2;
 }
 .c-form__input {
-  width: 90%;
+  width: 100%;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   background-color: #dcdcdc;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 #field-message {
@@ -1803,7 +1812,7 @@ button[type="back"]:hover {
   border-radius: 5px;
   padding: 5px 5px;
   line-height: 10px;
-  /* margin: 10px; */
+  margin-left: 5px;
 }
 
 textarea.c-form__input {
@@ -1818,17 +1827,17 @@ textarea.c-form__input {
   color: #afafaf;
 }
 
-/* @media (min-width: 640px) {
-  .c-form__item {
-    flex-wrap: nowrap;
-  }
-  .c-form__label {
-    width: 40%;
-  }
-  .c-form__input {
-    width: 55%;
-  }
-} */
+#confirm {
+  padding: 0 10% 0 10%;
+}
+
+#confirm h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  text-align: center;
+}
 
 /*-------------------Footer--------------------*/
 .footer_content {
@@ -2001,12 +2010,12 @@ textarea.c-form__input {
   }
 }
 
-/*----------------★SP版 scroll 450px以下表示★-------------------*/
+/*----------------★SP版 scroll 767px以下表示★-------------------*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .scrolldown1 {
     position: absolute;
-    top: 133%;
+    top: 95%;
     left: 5%;
   }
   .scrolldown1 span {
@@ -2031,7 +2040,38 @@ textarea.c-form__input {
   /*-------------------SP　FV--------------------*/
 
   .FV {
-    /* padding-bottom: initial; */
+    padding-bottom: 98px;
+  }
+
+  .welcome {
+    padding-bottom: 19px;
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+  .welcome2 {
+    padding-bottom: 19px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .welcome3 {
+    padding-bottom: 19px;
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+
+  .syo {
+    padding-bottom: 19px;
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+
+  .hand {
+    order: 1;
+    flex-direction: initial;
+    margin: 0 auto;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 48px;
   }
 
   .FV_content {
@@ -2040,29 +2080,42 @@ textarea.c-form__input {
 
     flex-direction: column;
   }
+
   .SNS {
     display: none;
   }
 
+  .catch {
+    text-align: center;
+    padding-left: initial;
+  }
+
   .catch_copy {
     font-size: 24px;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   .catch_copy_English {
     font-size: 24px;
+    padding-bottom: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: initial;
   }
 
   .back {
-    top: 850px;
+    top: 560px;
     left: -2%;
     font-size: 64px;
   }
   .back2 {
     font-size: 64px;
-    top: 930px;
+    top: 640px;
   }
 
   /*-------------------SP　Service--------------------*/
   .Service {
+    padding-bottom: 96px;
   }
 
   .Service_title {
@@ -2184,22 +2237,25 @@ textarea.c-form__input {
   }
   .Works_items {
     flex-direction: column;
-    padding: 32px 17% 0 17%;
+    padding: 32px 17% 112px 17%;
+    gap: 16px;
+
+    max-width: 250px;
   }
 
   .a_W_items_list1 {
     padding-top: initial;
     order: 2;
-    width: 67%;
+    width: 100%;
   }
   .a_W_items_list2 {
     padding-top: initial;
     order: 1;
-    width: 67%;
+    width: 100%;
   }
   .a_W_items_list3 {
     order: 3;
-    width: 67%;
+    width: 100%;
   }
 
   .W {
@@ -2294,14 +2350,11 @@ textarea.c-form__input {
   }
 
   .Contact_sheet {
-    padding-left: 9%;
+    /* padding-left: 9%; */
     padding-top: 32px;
-
-    /* margin-left: 6%; */
   }
 
   .check {
-    width: 100px;
     padding-top: 25px;
     padding-bottom: 96px;
   }
