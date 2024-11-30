@@ -430,6 +430,21 @@ circle:hover {
   /* position: fixed; */
 }
 
+.SNS_sp {
+  text-align: center;
+  display: flex;
+  gap: 16px;
+  width: 116px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 851px) {
+  .SNS_sp {
+    display: none;
+  }
+}
+
 /*-------------------ファーストビュー--------------------*/
 
 .FV {
@@ -614,7 +629,7 @@ circle:hover {
 /*-------------------こんなお悩み--------------------*/
 
 .onayami {
-  padding: 128px 5% 0 5%;
+  padding: 128px 5% 180px 5%;
 }
 
 .onayami_title {
@@ -814,7 +829,7 @@ span.color_other::after {
 /*-------------------Service--------------------*/
 
 .Service {
-  padding-top: 180px;
+  padding-bottom: 176px;
 }
 
 .Service2 {
@@ -1052,13 +1067,11 @@ span {
 }
 
 /*-------------------Skill--------------------*/
-.test {
-}
 
 .Skill_title {
   display: flex;
   justify-content: center;
-  padding: 176px 0 40px 0px;
+  padding: 0 0 40px 0;
   align-items: flex-end;
 }
 
@@ -1242,6 +1255,7 @@ span {
   padding-top: 16px;
   width: 312px;
   margin: 0 auto;
+  padding-bottom: 184px;
 }
 
 /*-------------------Works--------------------*/
@@ -1252,7 +1266,6 @@ span {
   color: #47665e;
   display: flex;
   justify-content: center;
-  padding-top: 184px;
   padding-bottom: 8px;
 }
 
@@ -1266,7 +1279,7 @@ span {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 48px 4.7% 0 4.7%;
+  padding: 48px 4.7% 180px 4.7%;
   /* gap: 48px; */
 }
 
@@ -1522,7 +1535,7 @@ span {
   display: flex;
   justify-content: center;
   gap: 7%;
-  padding: 0 12.5% 0 12.5%;
+  padding: 0 12.5% 184px 12.5%;
   /* max-width: 1000px; */
 }
 
@@ -1532,7 +1545,6 @@ span {
 }
 
 .Aboutme_title {
-  padding-top: 200px;
   padding-bottom: 32px;
   font-weight: bold;
   font-size: 64px;
@@ -1566,7 +1578,7 @@ span {
 }
 
 .me_illust {
-  padding-top: 300px;
+  padding-top: 120px;
   max-width: 250px;
   width: 50%;
   /* height: 250px; */
@@ -1620,11 +1632,11 @@ span {
 }
 
 .Contact_sheet {
-  padding-top: 280px;
+  /* padding-top: 280px; */
 }
 
 .Contact_title {
-  padding-top: 186px;
+  /* padding-top: 186px; */
   padding-bottom: 32px;
   /* padding-left: 15.5%; */
   font-weight: 700;
@@ -1920,11 +1932,12 @@ textarea.c-form__input {
     max-width: 250px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 112px;
   }
 
   .worry_list {
     width: 100%;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
   }
   .worry_text {
     width: 66%;
@@ -1987,16 +2000,69 @@ textarea.c-form__input {
     width: 90%;
   }
 }
+
+/*----------------★SP版 scroll 450px以下表示★-------------------*/
+
+@media screen and (max-width: 450px) {
+  .scrolldown1 {
+    position: absolute;
+    top: 133%;
+    left: 5%;
+  }
+  .scrolldown1 span {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    writing-mode: vertical-rl;
+  }
+
+  .scrolldown1 span {
+    left: 17px;
+    top: -68px;
+  }
+}
+
 /*----------------★SP版767px以下表示★-------------------*/
 
 @media screen and (max-width: 767px) {
   /* .pc_nav {
     display: none;
   } */
+  /*-------------------SP　FV--------------------*/
+
+  .FV {
+    /* padding-bottom: initial; */
+  }
+
+  .FV_content {
+    padding-top: 72px;
+    /* padding-bottom: initial; */
+
+    flex-direction: column;
+  }
+  .SNS {
+    display: none;
+  }
+
+  .catch_copy {
+    font-size: 24px;
+  }
+  .catch_copy_English {
+    font-size: 24px;
+  }
+
+  .back {
+    top: 850px;
+    left: -2%;
+    font-size: 64px;
+  }
+  .back2 {
+    font-size: 64px;
+    top: 930px;
+  }
 
   /*-------------------SP　Service--------------------*/
   .Service {
-    padding-top: 88px;
   }
 
   .Service_title {
@@ -2017,7 +2083,6 @@ textarea.c-form__input {
   /*-------------------SP　Skill--------------------*/
 
   .Skill_title {
-    padding-top: 112px;
     padding-bottom: 16px;
     flex-direction: column;
     align-items: initial;
@@ -2041,7 +2106,7 @@ textarea.c-form__input {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 71%;
+    width: 83%;
   }
 
   .items_list1 {
@@ -2063,6 +2128,7 @@ textarea.c-form__input {
     text-align: center;
     flex-direction: column;
     height: auto;
+    width: 83%;
   }
   .items_list4b {
     margin: 0 auto;
@@ -2109,12 +2175,12 @@ textarea.c-form__input {
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
+    padding-bottom: 112px;
   }
 
   /*-------------------SP　Works--------------------*/
   .Works_title2 {
     font-size: 40px;
-    padding-top: 112px;
   }
   .Works_items {
     flex-direction: column;
@@ -2152,7 +2218,6 @@ textarea.c-form__input {
 
   .Aboutme_title {
     font-size: 40px;
-    padding-top: 112px;
   }
 
   .Aboutme_content {
@@ -2196,12 +2261,12 @@ textarea.c-form__input {
     text-align: center;
     margin: 0 auto;
     width: auto;
+    padding-bottom: 112px;
   }
 
   /*-------------------SP　Contact--------------------*/
 
   .Contact_title {
-    padding-top: 112px;
     font-size: 40px;
     text-align: center;
   }
@@ -2223,14 +2288,36 @@ textarea.c-form__input {
   .c-form {
     max-width: 388px;
   }
+  .c-form__submit {
+    padding-top: initial;
+    max-width: 388px;
+  }
 
   .Contact_sheet {
     padding-left: 9%;
     padding-top: 32px;
+
     /* margin-left: 6%; */
   }
 
   .check {
     width: 100px;
+    padding-top: 25px;
+    padding-bottom: 96px;
+  }
+
+  /*-------------------SP　Footer--------------------*/
+
+  .footer_wrap {
+    display: none;
+  }
+
+  .footer_logo {
+    padding-top: 48px;
+  }
+
+  .Copyright {
+    width: 80%;
+    margin: 0 auto;
   }
 }
