@@ -385,7 +385,8 @@ circle:hover {
 } */
 
 .c1 {
-  width: 330px;
+  max-width: 330px;
+  width: 93%;
   padding-top: 8px;
   display: flex;
 }
@@ -2092,8 +2093,6 @@ textarea.c-form__input {
 
   .catch_copy {
     font-size: 24px;
-    padding-left: 1%;
-    padding-right: 1%;
   }
   .catch_copy_English {
     font-size: 24px;
@@ -2111,6 +2110,7 @@ textarea.c-form__input {
   .back2 {
     font-size: 64px;
     top: 640px;
+    white-space: nowrap;
   }
 
   /*-------------------SP　Service--------------------*/
