@@ -406,6 +406,13 @@ span {
   opacity: 1;
 }
 
+/* button[type="button"] {
+  background-color: #e2dbd3; 
+} */
+button[type="button"]:hover {
+  background-color: #e2dbd3; /* ホバー時の色 */
+}
+
 /*-------------------Footer--------------------*/
 .footer_content {
   background-color: #e2dbd3;
