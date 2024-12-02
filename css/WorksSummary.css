@@ -358,6 +358,7 @@ span {
   position: relative;
   width: 75%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .slick-next {
@@ -411,6 +412,10 @@ span {
 } */
 button[type="button"]:hover {
   background-color: #e2dbd3; /* ホバー時の色 */
+}
+
+.slick-list {
+  z-index: 100; /*Slick_navigationの両端矢印の範囲下に作品があり重なった部分のみリンクが外れてクリックできない状態だったため、Slickより上に表示させた*/
 }
 
 /*-------------------Footer--------------------*/
