@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignConnects</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+    <header>
+        <div class="header_wrap">
+
+            <div class="header_logo">
+                <img src="./images/rogo.svg" alt="DesignConnects">
+            </div>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#Skill">Skill</a></li>
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#About me">About me</a></li>
+                </ul>
+                <a href="#Contact_title">
+                    <div class="Contact">Contact
+                    </div>
+                </a>
+
+            </nav>
+
+
+            <div class="openbtn"><span></span><span></span><span></span></div>
+
+            <nav id="sp_nav">
+                <div class="SNS_sp">
+                    <div class="=instagram">
+                        <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                    </div>
+                    <div class="X">
+                        <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="circle1"><a href="#Service">Service</a></li>
+                </ul>
+
+                <ul class="c1">
+                    <li class="circle2"><a href="#Skill">Skill</a></li>
+                    <li class="Links">Links</a></li>
+                    <li class="circle2"><a href="#Works">Works</a></li>
+                </ul>
+
+                <ul class="c2">
+                    <li class="circle3"><a href="#About me">About me</a></li>
+                    <li class="circle3"><a class="Contact_link" href="#Contact_title">
+                            <div class="Contact_hamburger">Contact</div>
+                        </a></li>
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+
+    </header>
+
+
+    <section id="Works_projects">
+
+
+
+    </section>
+
+
+
+
+    <section>
+
+        <footer class="footer_content">
+
+            <div class="footer_wrap">
+
+                <nav class="pc_nav2">
+                    <ul>
+                        <a href="#Service">
+                            <li id="pc_nav2">Service</li>
+                        </a>
+                        <a href="#Skill">
+                            <li id="pc_nav2">Skill</li>
+                        </a>
+                        <a href="#Works">
+                            <li id="pc_nav2">Works</li>
+                        </a>
+                        <a href="#About me">
+                            <li id="pc_nav2">About me</li>
+                        </a>
+                        <a href="#Contact_title">
+                            <li class="Contact2">Contact</li>
+                        </a>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="footer_logo">
+                <img src="./images/rogo.svg" alt="DesignConnects">
+            </div>
+
+
+            <div class="SNS2">
+                <div class="=instagram">
+                    <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                </div>
+                <div class="X">
+                    <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                </div>
+            </div>
+
+
+            <p class="Copyright"> Ⓒ Design Connects all rights reserved.</p>
+
+
+
+        </footer>
+
+
+
+    </section>
+
+
+
+    <script>
+        $('.Service_slick').slick({
+            dots: true,
+            infinite: true,
+            // speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            appendArrows: $('.Slick_arrows'),
+            appendDots: $('.Slick_dots'),
+        });
+
+        $(".openbtn").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $("#sp_nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+        });
+
+        $("#sp_nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+            $("#sp_nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+        });
+
+    </script>
+
+
+</body>
+
+</body>
+
+</html>

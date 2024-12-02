@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignConeectsWorksSummary</title>
+    <title>DesignConnectsWorksSummary</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -31,22 +31,58 @@
             </div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Works">Works</a></li>
                     <li><a href="#Skill">Skill</a></li>
                     <li><a href="#Works">Works</a></li>
                     <li><a href="#About me">About me</a></li>
                 </ul>
+
+
                 <a href="#Contact_title">
                     <div class="Contact">Contact
                     </div>
                 </a>
 
             </nav>
+
+
+            <div class="openbtn"><span></span><span></span><span></span></div>
+
+            <nav id="sp_nav">
+                <div class="SNS_sp">
+                    <div class="=instagram">
+                        <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                    </div>
+                    <div class="X">
+                        <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="circle1"><a href="#Service">Service</a></li>
+                </ul>
+
+                <ul class="c1">
+                    <li class="circle2"><a href="#Skill">Skill</a></li>
+                    <li class="Links">Links</a></li>
+                    <li class="circle2"><a href="#Works">Works</a></li>
+                </ul>
+
+                <ul class="c2">
+                    <li class="circle3"><a href="#About me">About me</a></li>
+                    <li class="circle3"><a class="Contact_link" href="#Contact_title">
+                            <div class="Contact_hamburger">Contact</div>
+                        </a></li>
+                </ul>
+
+            </nav>
+
+
         </div>
 
 
-
     </header>
+
 
     <section class="WorksSummary">
         <div id="Design_title">
@@ -357,6 +393,17 @@
                 },
             ]
 
+        });
+
+
+        $(".openbtn").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $("#sp_nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+        });
+
+        $("#sp_nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+            $("#sp_nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
         });
 
 
