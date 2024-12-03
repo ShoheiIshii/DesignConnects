@@ -2334,7 +2334,7 @@ textarea.c-form__input {
   }
 
   .Contact_text {
-    padding-left: 7%;
+    padding-left: 6%;
     padding-right: 4.5%;
     width: auto;
     /* width: 80%;
@@ -2379,4 +2379,265 @@ textarea.c-form__input {
     width: 80%;
     margin: 0 auto;
   }
+}
+
+/*--------------------フェードインアニメーション-----------------------*/
+
+.hand {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.hand.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.back {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s, transform 3s;
+}
+.back.is-inview {
+  opacity: 5%;
+  transform: translateX(0);
+  transition-delay: 0.8s;
+}
+.back2 {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.8s, transform 2.6s;
+}
+.back2.is-inview {
+  opacity: 5%;
+  transform: translateX(0);
+  transition-delay: 1.5s;
+}
+/* フェードイン(初期値) */
+.onayami_title {
+  opacity: 0; /* 最初は非表示 */
+  transform: translateY(30px); /* 下に30pxの位置から */
+  transition: opacity 0.8s, transform 0.8s; /* 透過率と縦方向の移動を0.8秒 */
+}
+/* フェードイン(スクロールした後) */
+.onayami_title.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 30px上に移動する */
+  transition-delay: 0.4s; /* フェード開始を0.4秒遅らせる */
+}
+
+.worry {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.worry.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+
+.Service_title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Service_title.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.Service_slick {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Service_slick.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+.Slick_navigation {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.8s, transform 0.5s;
+}
+.Slick_navigation.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.Skill_title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Skill_title.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.Skill_items {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Skill_items.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.items_list4 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.items_list4.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#Wacom {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+#Wacom.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.Works_title1 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Works_title1.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.a_W_items_list2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.a_W_items_list2.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.a_W_items_list1 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s, transform 0.8s;
+}
+.a_W_items_list1.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.2s;
+}
+.a_W_items_list3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.a_W_items_list3.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.7s;
+}
+
+.Aboutme_title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Aboutme_title.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+#Aboutme {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+#Aboutme.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.Aboutme2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Aboutme2.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.me_illust {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.me_illust.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.3s;
+}
+
+.Contact_title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Contact_title.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#Contact_text1 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+#Contact_text1.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.Contact_content2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Contact_content2.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+.Contact_sheet {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.Contact_sheet.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.05s;
 }

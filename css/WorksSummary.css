@@ -267,6 +267,12 @@ body {
   padding-left: 3%;
 }
 
+@media screen and (max-width: 768px) {
+  .W_items_list img {
+    pointer-events: none;
+  }
+}
+
 #confidential0 {
   padding-left: 5%;
   padding-right: 5%;
@@ -405,6 +411,20 @@ span {
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 1;
+}
+
+.slick-dots {
+  bottom: 10px;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #40322d;
+  font-size: 15px;
+  /* top: 20px; */
 }
 
 /* button[type="button"] {
@@ -835,4 +855,16 @@ button[type="button"]:hover {
   .SNS_sp {
     display: none;
   }
+}
+
+/*---------------------Slick番号表示--------------------*/
+.slick-num {
+  position: absolute;
+  top: 105%;
+  left: 48%;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  color: #40322d;
+  /* background-color: #e2dbd3; */
 }

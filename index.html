@@ -40,12 +40,12 @@
                         <li><a href="#About me">About me</a></li>
                     </ul>
                     <!------------------円を描くアニメーション------------------->
-                    <a href="#Service" class="circle0">
+                    <!-- <a href="#Service" class="circle0">
                         <svg width="75" height="75">
                             <circle cx="37.5" cy="37.5" r="35.5" />
                         </svg>
                         <span>Service</span>
-                    </a>
+                    </a> -->
                     <!--------------------------------------------------------->
 
                     <a href="#Contact_title">
@@ -388,7 +388,7 @@
                 <div class="a_W_items_list1">
                     <div class="W_btn">
                         <img src="./images/Works_coding.png" alt="Coding">
-                        <a href="Works_Summary.html #Coding_Summary">
+                        <a href="./Works_Summary.html#Coding_Summary">
                             <div class="W_items_list"><img src="./images/Coding.svg" alt="Coding"></div>
                         </a>
 
@@ -399,7 +399,7 @@
                             <img src="./images/dots3.svg" alt="dots3">
                         </div>
                         <div class="W_botan">
-                            <a href="Works_Summary.html #Coding_Summary">
+                            <a href="./Works_Summary.html#Coding_Summary">
                                 <div class="W_Coding">
                                     <p>Coding</p>
                                 </div>
@@ -481,26 +481,27 @@
                         <span class="Aboutme_name">syo</span>
                     </div>
 
-                    <p class="Aboutme_content">石井翔平 | Shohei Ishii</p>
-                    <p class="Aboutme_content2">埼玉県　1995年生まれ</p>
-                    <p class="Aboutme_content">好きなこと</p>
-                    <p class="Aboutme_content2">ヨーロッパ旅/イラスト/カフェ巡り etc...</p>
-                    <p class="Aboutme_content2"> ここから生まれるコミュニケーションや、様々なモノで
-                        デザインを味わうことがずっと好きです。</p>
-                    <p class="Aboutme_content">大事にしていること</p>
-                    <p class="Aboutme_content2">より良い「コミュニケーション」をすることです。</p>
+                    <div class="Aboutme2">
+                        <p class="Aboutme_content">石井翔平 | Shohei Ishii</p>
+                        <p class="Aboutme_content2">埼玉県　1995年生まれ</p>
+                        <p class="Aboutme_content">好きなこと</p>
+                        <p class="Aboutme_content2">ヨーロッパ旅/イラスト/カフェ巡り etc...</p>
+                        <p class="Aboutme_content2"> ここから生まれるコミュニケーションや、様々なモノで
+                            デザインを味わうことがずっと好きです。</p>
+                        <p class="Aboutme_content">大事にしていること</p>
+                        <p class="Aboutme_content2">より良い「コミュニケーション」をすることです。</p>
 
-                    <div class="A">
-                        <div class="A_dots">
-                            <img src="./images/dots3.svg" alt="dots3">
+                        <div class="A">
+                            <div class="A_dots">
+                                <img src="./images/dots3.svg" alt="dots3">
+                            </div>
+                        </div>
+                        <div class="A2">
+                            <div class="A_More">
+                                <p>More!</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="A2">
-                        <div class="A_More">
-                            <p>More!</p>
-                        </div>
-                    </div>
-
 
                 </div>
                 <div class="me_illust">
@@ -520,10 +521,12 @@
                     <h2 class="Contact_title">Contact</h2>
                     <p id="Contact_text1">まずは、ちょっとした内容からで全く問題ございません。
                         どうぞお気軽にご相談ください。</p>
-                    <p>また、制作初期に必要なコンセプトデザインは、スムーズなイメージ合わせが重要となるためスピーディーに対応しております。最初期のイメージラフは、2〜3⽇で制作可能です。</p>
-                    <p id="Contact_text2">※プロジェクト規模により変動</p>
-                    <p id="Contact_text3">直接メールでのお問い合わせも承っております。</p>
-                    <p id="Contact_text4">✉ is.hono.at.1122@gmail.com</p>
+                    <div class="Contact_content2">
+                        <p>また、制作初期に必要なコンセプトデザインは、スムーズなイメージ合わせが重要となるためスピーディーに対応しております。最初期のイメージラフは、2〜3⽇で制作可能です。</p>
+                        <p id="Contact_text2">※プロジェクト規模により変動</p>
+                        <p id="Contact_text3">直接メールでのお問い合わせも承っております。</p>
+                        <p id="Contact_text4">✉ is.hono.at.1122@gmail.com</p>
+                    </div>
                 </div>
 
                 <div class="Contact_sheet">
@@ -743,8 +746,6 @@
 
 
 
-
-
         // var ua = navigator.userAgent;
         // if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) {
         //     $('./images/Works_coding.png img').each(function () {
@@ -755,6 +756,196 @@
         //     });
         // }
     </script>
+
+    <script>
+        // スクロールして表示領域に入ったらclass付与
+        $(function () {
+            $(".hand").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".back").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".back2").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".onayami_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".worry").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".Service_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".Service_slick").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Slick_navigation").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Skill_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Skill_items").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".items_list4").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#Wacom").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Works_title1").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".a_W_items_list2").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".a_W_items_list1").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".a_W_items_list3").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Aboutme_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#Aboutme").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Aboutme2").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".me_illust").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".Aboutme_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Contact_title").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#Contact_text1").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Contact_content2").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".Contact_sheet").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
+
+
+
+
+    <script src="js/jquery.inview.min.js"></script>
 
 
 </body>
