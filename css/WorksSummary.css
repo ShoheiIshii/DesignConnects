@@ -86,6 +86,9 @@ body {
   display: flex;
   gap: 48px;
 }
+.pc_nav ul li {
+  border-radius: 50%;
+}
 .pc_nav ul li a {
   align-items: center;
   text-align: center;
@@ -265,12 +268,6 @@ body {
 
 #Coding_Summary img {
   padding-left: 3%;
-}
-
-@media screen and (max-width: 768px) {
-  .W_items_list img {
-    pointer-events: none;
-  }
 }
 
 #confidential0 {

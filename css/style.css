@@ -87,6 +87,9 @@ body {
   gap: 48px;
   transition: background-color 1s ease;
 }
+.pc_nav ul li {
+  border-radius: 50%;
+}
 .pc_nav ul li a {
   align-items: center;
   text-align: center;
@@ -1016,6 +1019,24 @@ span {
   margin-bottom: 0;
 }
 
+#slick-slide00 {
+  min-width: 300px;
+}
+#slick-slide01 {
+  min-width: 300px;
+}
+/*
+#slick-slide02 {
+  min-width: 300px;
+}
+#slick-slide03 {
+  min-width: 300px;
+}
+*/
+.slick-list {
+  overflow: visible;
+}
+
 .slick-next {
   padding-right: 3px;
   /* top: 102%; */
@@ -1322,6 +1343,20 @@ span {
 .W_items_list1:hover ~ .hover-img {
   background-image: url("/images/Works_coding.jpg");
   } */
+
+@media screen and (min-width: 768px) {
+  .W_items_list img {
+    pointer-events: none;
+  }
+  .W_items_list .W_items_list2-2 img {
+    pointer-events: none;
+  }
+}
+
+.W_btn a {
+  display: inline-block;
+  width: 100%;
+}
 
 .W_btn {
   position: relative;
@@ -1701,6 +1736,7 @@ span {
   display: flex;
   justify-content: space-evenly;
   padding-top: 24px;
+  padding-bottom: 56px;
 }
 
 /* .check .c-form__submit {
