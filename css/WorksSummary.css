@@ -181,13 +181,14 @@ body {
   padding-bottom: 8px;
   display: flex;
   margin-bottom: 32px;
+  align-items: flex-end;
 }
 
 #Works_Summary img {
   padding-top: 3%;
 }
 
-#Works_Summary2 {
+#confidential_Summary {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -195,24 +196,26 @@ body {
   padding-bottom: 8px;
   display: flex;
   margin-bottom: 32px;
+  align-items: flex-end;
 }
+
 #Works_Summary h2 {
-  margin-top: 6.5%;
+  /* margin-top: 6.5%; */
   font-size: 32px;
   font-weight: 700;
   margin-left: 20px;
 }
-#Works_Summary2 h2 {
-  margin-top: 6%;
-  font-size: 32px;
+#confidential_Summary h2 {
+  /* margin-top: 6%; */
+  font-size: 28px;
   font-weight: 700;
   margin-left: 20px;
 }
 
 #Works_Summary span {
-  margin-top: 6.3%;
+  margin-bottom: 2px;
 }
-#Works_Summary2 span {
+#confidential_Summary span {
   margin-left: 2%;
   margin-top: 41px;
 }
@@ -220,14 +223,14 @@ body {
 #Works_Summary img {
   padding-left: 3%;
 }
-#Works_Summary2 img {
+#confidential_Summary img {
   padding-left: 3%;
 }
 
 .design_text {
   margin-left: 16px;
 }
-#Works_Summary2 p {
+#confidential_Summary p {
   padding-left: 4%;
 }
 
@@ -277,7 +280,7 @@ body {
 
 #confidential {
   display: flex;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   gap: 13%;
@@ -285,6 +288,12 @@ body {
   padding-bottom: 160px;
   padding-top: 16px;
 }
+/* 
+justify-content: space-between;
+aspect-ratio: 1;
+height: 280px;
+align-items: center; */
+
 .confidential1 {
   padding-bottom: 32px;
 }
@@ -424,6 +433,13 @@ span {
   /* top: 20px; */
 }
 
+button.slick-next.slick-arrow {
+  background-color: #e2dbd3;
+}
+button.slick-prev.slick-arrow {
+  background-color: #e2dbd3;
+}
+
 /* button[type="button"] {
   background-color: #e2dbd3; 
 } */
@@ -512,6 +528,14 @@ button[type="button"]:hover {
   }
 } */
 
+@media (min-width: 490px) {
+  .design_text00 {
+    display: none;
+  }
+  .confidential_file2 {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   #Works_Summary h2 {
     margin-left: 10px;
@@ -525,9 +549,18 @@ button[type="button"]:hover {
     width: 90%;
   }
 
+  #confidential_Summary {
+    width: 90%;
+    /* padding-bottom: 24px; */
+  }
+
   #Works_Summary img {
     padding-left: 3%;
-    width: 20%;
+    /* width: 20%; */
+  }
+
+  .design_text0 {
+    display: none;
   }
 
   #Works_Summary h2 {
@@ -554,6 +587,46 @@ button[type="button"]:hover {
     padding-top: 8px;
     padding-left: initial;
     padding-bottom: initial;
+  }
+
+  #confidential {
+    padding-top: initial;
+    padding-bottom: 8px;
+    width: initial;
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+
+  .confidential1 {
+    padding-bottom: 24px;
+  }
+
+  .confidential2 {
+    padding-bottom: 24px;
+  }
+
+  .confidential_file {
+    display: none;
+  }
+
+  .confidential_file2 {
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  #confidential_Summary h2 {
+  }
+
+  .design_text00 {
+    padding-bottom: 24px;
+  }
+
+  #subtitle2 {
+    padding-left: 8px;
+  }
+  #Summary_contact {
+    padding-top: 24px;
   }
 }
 
@@ -855,13 +928,25 @@ button[type="button"]:hover {
 }
 
 /*---------------------Slick番号表示--------------------*/
+
+.Works_slick0 {
+  position: relative;
+}
+
 .slick-num {
   position: absolute;
-  top: 105%;
-  left: 48%;
+  top: 92%;
+  left: 38%;
   font-weight: 700;
   text-align: center;
   padding: 10px;
   color: #40322d;
   /* background-color: #e2dbd3; */
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .slick-num {
+    display: block;
+  }
 }

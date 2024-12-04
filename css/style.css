@@ -535,6 +535,90 @@ circle:hover {
   padding-top: 10px;
   padding-bottom: 24px;
 }
+
+/*----------------FV文字リズ表示---------------------*/
+
+.catch_copy_English {
+  display: flex;
+  overflow: hidden;
+}
+
+.catch_copy_English span {
+  display: block;
+  transform: translate(0, 154%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.catch_copy_English.-visible span {
+  transform: translate(0, 0);
+}
+
+.catch_copy_English span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.catch_copy_English span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+.catch_copy_English span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+.catch_copy_English span:nth-child(5) {
+  transition-delay: 0.24s;
+}
+.catch_copy_English span:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.catch_copy_English span:nth-child(7) {
+  transition-delay: 0.36s;
+}
+.catch_copy_English span:nth-child(8) {
+  transition-delay: 0.42s;
+}
+.catch_copy_English span:nth-child(9) {
+  transition-delay: 0.48s;
+}
+.catch_copy_English span:nth-child(10) {
+  transition-delay: 0.54s;
+}
+.catch_copy_English span:nth-child(11) {
+  transition-delay: 0.6s;
+}
+.catch_copy_English span:nth-child(12) {
+  transition-delay: 0.66s;
+}
+.catch_copy_English span:nth-child(13) {
+  transition-delay: 0.72s;
+}
+.catch_copy_English span:nth-child(14) {
+  transition-delay: 0.78s;
+}
+.catch_copy_English span:nth-child(15) {
+  transition-delay: 0.84s;
+}
+.catch_copy_English span:nth-child(16) {
+  transition-delay: 0.9s;
+}
+.catch_copy_English span:nth-child(17) {
+  transition-delay: 0.96s;
+}
+.catch_copy_English span:nth-child(18) {
+  transition-delay: 1.02s;
+}
+.catch_copy_English span:nth-child(19) {
+  transition-delay: 1.08s;
+}
+.catch_copy_English span:nth-child(20) {
+  transition-delay: 1.14s;
+}
+.catch_copy_English span:nth-child(21) {
+  transition-delay: 1.2s;
+}
+.catch_copy_English span:nth-child(22) {
+  transition-delay: 1.26s;
+}
+
+/*-------------------------------------*/
+
 .catch_copy {
   font-size: 32px;
   font-weight: bold;
@@ -1018,13 +1102,13 @@ span {
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
-
+/* 
 #slick-slide00 {
   min-width: 300px;
 }
 #slick-slide01 {
   min-width: 300px;
-}
+} */
 /*
 #slick-slide02 {
   min-width: 300px;
@@ -1033,6 +1117,11 @@ span {
   min-width: 300px;
 }
 */
+
+.slick-slide img {
+  min-width: 290px;
+}
+
 .slick-list {
   overflow: visible;
 }
@@ -1345,47 +1434,37 @@ span {
   } */
 
 @media screen and (min-width: 768px) {
-  .W_items_list img {
+  .W_btn a,
+  .W_btn2 a,
+  .W_btn3 a {
     pointer-events: none;
   }
-  .W_items_list .W_items_list2-2 img {
+  /* .W_items_list .W_items_list2-2 img {
     pointer-events: none;
-  }
+  } */
 }
 
-.W_btn a {
+.W_btn a,
+.W_btn2 a,
+.W_btn3 a {
   display: inline-block;
   width: 100%;
+  border-radius: 50%;
 }
 
 .W_btn {
   position: relative;
   /* width: 300px;
   height: 300px; */
-  margin: 0 auto;
-  display: block;
-  border-radius: 12px;
+  /* margin: 0 auto; */
+  /* border-radius: 12px; */
+  border-radius: 50%;
   overflow: hidden;
   /* cursor: alias; */
 }
-/* .W_btn img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    display: block;
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-    }
-    .W_btn:hover img:nth-of-type(2) {
-      -webkit-transform: translate(-50%, -50%) scale(1.15) !important;
-      transform: translate(-50%, -50%) scale(1.15) !important;
-      opacity: 0;
-      }
-      */
+
 .W_btn img {
+  width: 100%;
   position: absolute;
   /* top: 0;
   left: 0; */
@@ -1397,6 +1476,7 @@ span {
 .W_btn > img {
   /* top: -100%; */
   opacity: 0;
+  border-radius: 50%; /*imgのはみ出てる4つ角の白を消す*/
 }
 /*　>を使うことで、W btnの中の直下のimgのみに適用できる*/
 
@@ -1421,6 +1501,7 @@ span {
 /* ----------------------------------------------- */
 .W_btn2 {
   position: relative;
+  border-radius: 50%;
 }
 
 .W_btn2 img {
@@ -1462,6 +1543,7 @@ span {
 
 .W_btn3 {
   position: relative;
+  border-radius: 50%;
 }
 
 .W_btn3 img {
@@ -2419,6 +2501,57 @@ textarea.c-form__input {
 
 /*--------------------フェードインアニメーション-----------------------*/
 
+.catch_copy {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.catch_copy.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+.welcome {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.welcome.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.welcome2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.welcome2.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.welcome3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.welcome3.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.syo {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.syo.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.5s;
+}
+
 .hand {
   opacity: 0;
   transform: translateY(30px);
@@ -2438,7 +2571,7 @@ textarea.c-form__input {
 .back.is-inview {
   opacity: 5%;
   transform: translateX(0);
-  transition-delay: 0.8s;
+  transition-delay: 1.8s;
 }
 .back2 {
   opacity: 0;
@@ -2448,7 +2581,7 @@ textarea.c-form__input {
 .back2.is-inview {
   opacity: 5%;
   transform: translateX(0);
-  transition-delay: 1.5s;
+  transition-delay: 2.5s;
 }
 /* フェードイン(初期値) */
 .onayami_title {

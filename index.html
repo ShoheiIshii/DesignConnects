@@ -110,7 +110,30 @@
                 </div>
 
                 <div class="catch">
-                    <p class="catch_copy_English">“Connecting with Design”</p>
+                    <h2 class="catch_copy_English">
+                        <span>“C</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>n</span>
+                        <span>e</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>g</span>
+                        <span>&nbsp;</span>
+                        <span>w</span>
+                        <span>i</span>
+                        <span>t</span>
+                        <span>h</span>
+                        <span>&nbsp;</span>
+                        <span>D</span>
+                        <span>e</span>
+                        <span>s</span>
+                        <span>i</span>
+                        <span>g</span>
+                        <span>n”</span>
+                    </h2>
                     <p class="catch_copy">「人と人をつなぐ」デザインを。</p>
                     <p class="welcome">Thank you for coming today! </p>
                     <p class="welcome2"> Design is constantly connecting people.</p>
@@ -761,6 +784,45 @@
         // }
     </script>
 
+
+
+
+    <script>
+        $(function () {
+            $(".catch_copy").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".welcome").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".welcome2").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".welcome3").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".syo").on("inview", function () {
+                $(this).addClass("is-inview");
+            });
+        });
+    </script>
+
     <script>
         // スクロールして表示領域に入ったらclass付与
         $(function () {
@@ -950,6 +1012,19 @@
 
 
     <script src="js/jquery.inview.min.js"></script>
+
+    <script>
+        const CLASSNAME = "-visible";
+        const TIMEOUT = 1500;
+        const $target = $(".catch_copy_English");
+
+        setInterval(() => {
+            $target.addClass(CLASSNAME);
+            setTimeout(() => {
+                $target.removeClass(CLASSNAME);
+            }, TIMEOUT);
+        }, TIMEOUT * 2);
+    </script>
 
 
 </body>

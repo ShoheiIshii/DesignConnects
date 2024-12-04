@@ -38,7 +38,7 @@
                 </ul>
 
 
-                <a href="#Contact_title">
+                <a href="./index.html#Contact_title">
                     <div class="Contact">Contact
                     </div>
                 </a>
@@ -216,13 +216,13 @@
 
 
     <section id="confidential0">
-        <div id="Works_Summary2">
+        <div id="confidential_Summary">
             <img src="./images/confidential projects.svg" alt="confidential projects">
             <div class="confidential_title">
                 <p class="design_text">confidential projects</p>
                 <h2>非公開実績</h2>
             </div>
-            <span class="design_text">デザインやイラストに関わる業務を幅広く担当してきております。
+            <span class="design_text0">デザインやイラストに関わる業務を幅広く担当してきております。
             </span>
         </div>
 
@@ -230,6 +230,8 @@
             <div>
                 <div class="confidential1">
                     <div class="confidential_subtitle">
+                        <span class="design_text00">デザインやイラストに関わる業務を幅広く担当してきております。
+                        </span>
                         <p class="line1"><span id="subtitle">Design</span><span id="subtitle2">※会社内にて制作案件のため</span></p>
                     </div>
                     <p class="confidential_text2">ブランド紹介のブックレット(17ページ) / 広告チラシ / バナー </p>
@@ -253,6 +255,10 @@
             </div>
 
         </section>
+
+        <div class="confidential_file2">
+            <img src="./images/confidential projects_file.svg" alt="confidential_file">
+        </div>
 
     </section>
 
@@ -348,6 +354,7 @@
                     $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
                     $(".now-count").text(slick.currentSlide + 1);
                     $(".all-count").text(slick.slideCount);
+                    $(this).find('slick-num').insertAfter($(this))
 
                 })
                 .slick({
@@ -381,7 +388,12 @@
                 })
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
                     $(".now-count").text(nextSlide + 1);
-                });
+                })
+                .on("setPosition", function () {
+                    $(this).find('.slick-num').insertAfter($(this))
+                })
+
+
         });
 
 
