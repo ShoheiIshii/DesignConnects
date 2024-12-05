@@ -232,10 +232,12 @@ h3 {
 }
 
 .line1 {
-  background-image: url("dot1.svg");
+  background-image: url("../images/dot1.svg");
   background-repeat: repeat-x;
-  border-bottom: 1px dotted;
+  /* border-bottom: 1px dotted; */
   padding-bottom: 16px;
+  background-size: 3px 3px;
+  background-position: bottom;
 }
 
 .point {
@@ -308,6 +310,7 @@ h3 {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  translate: 0.5s;
 }
 
 .page_top p {
@@ -344,7 +347,7 @@ h3 {
   box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
 }
  */
-.page_top:after {
+/* .page_top:after {
   content: "";
   content: "TOP";
   display: block;
@@ -357,16 +360,16 @@ h3 {
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0, 0);
   transition: transform ease 0.4s;
-}
+} */
 
-.page_top:hover:after {
-  transform: translate(-50%, -50%) scale(1.1, 1.1);
+.page_top:hover {
+  transform: scale(1.3, 1.3);
 }
 
 .page_top:before {
 }
 
-.page_top:hover:before {
+/* .page_top:hover:before {
   content: "";
   position: absolute;
   z-index: 10;
@@ -380,7 +383,7 @@ h3 {
   transform: translate(-50%, -50%) rotate(45deg);
   transition: border-color ease 0.1s;
   border-color: #fff;
-}
+} */
 
 /*-------------------Footer--------------------*/
 .footer_content {

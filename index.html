@@ -1017,13 +1017,17 @@
         const CLASSNAME = "-visible";
         const TIMEOUT = 1500;
         const $target = $(".catch_copy_English");
+        const $target2 = $(".catch_copy");
 
-        setInterval(() => {
+        // setInterval(() => {
+        setTimeout(() => {
             $target.addClass(CLASSNAME);
+            // $target.removeClass(CLASSNAME);
             setTimeout(() => {
-                $target.removeClass(CLASSNAME);
-            }, TIMEOUT);
-        }, TIMEOUT * 2);
+                $target2.addClass(CLASSNAME);
+            }, TIMEOUT)
+        }, TIMEOUT);
+        // }, TIMEOUT * 2);
     </script>
 
 

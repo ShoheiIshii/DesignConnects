@@ -486,13 +486,13 @@ circle:hover {
   width: 8%;
   transform: translateX(-50%);
   padding-right: 2%;
-  /* transform: rotateY(center); 3DのY軸(垂直)で回転 */
   /* transform-origin: center; */
   /* animation:fu 4s linear infinite;　infiniteで永続 */
 }
 
 .Star img {
   width: 100%;
+  animation: Star 3s linear infinite;
 }
 
 /* .Star2 {
@@ -501,22 +501,17 @@ circle:hover {
 
 .Star1 {
   animation: Star 4s infinite;
-}
+}*/
 
 @keyframes Star {
   0% {
-    visibility: visible;
+    transform: rotateY(0deg);
   }
-  25% {
-    visibility: hidden;
-  }
-  75% {
-    visibility: hidden;
-  }
+
   100% {
-    visibility: visible;
+    transform: rotateY(360deg);
   }
-} */
+}
 
 .hand {
   padding-top: 30px;
@@ -2240,6 +2235,7 @@ textarea.c-form__input {
   /*-------------------SP　Service--------------------*/
   .Service {
     padding-bottom: 96px;
+    overflow-x: hidden;
   }
 
   .Service_title {
