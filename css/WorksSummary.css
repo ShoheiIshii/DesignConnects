@@ -284,7 +284,7 @@ body {
   width: 100%;
   margin: 0 auto;
   gap: 13%;
-  padding-left: 4.5%;
+  padding-left: 10%;
   padding-bottom: 160px;
   padding-top: 16px;
 }
@@ -336,7 +336,7 @@ span {
 
 .line1 {
   font-weight: 700;
-  background-image: url("confidential projects_line.svg");
+  background-image: url("dot1.svg");
   background-repeat: repeat-x;
   border-bottom: 1px dotted;
 }
