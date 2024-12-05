@@ -921,6 +921,7 @@ span.color_other::after {
 
 .Service {
   padding-bottom: 176px;
+  overflow-x: hidden;
 }
 
 .Service2 {
@@ -2235,7 +2236,6 @@ textarea.c-form__input {
   /*-------------------SP　Service--------------------*/
   .Service {
     padding-bottom: 96px;
-    overflow-x: hidden;
   }
 
   .Service_title {
