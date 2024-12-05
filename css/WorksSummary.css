@@ -165,7 +165,7 @@ body {
   display: flex;
   justify-content: space-between;
   aspect-ratio: 1;
-  height: 280px;
+  /* height: 280px; */
   align-items: center;
 }
 
@@ -935,8 +935,8 @@ button[type="button"]:hover {
 
 .slick-num {
   position: absolute;
-  top: 92%;
-  left: 38%;
+  top: 98%;
+  left: 42%;
   font-weight: 700;
   text-align: center;
   padding: 10px;

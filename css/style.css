@@ -492,7 +492,7 @@ circle:hover {
 
 .Star img {
   width: 100%;
-  animation: Star 3s linear infinite;
+  animation: Star 3s linear infinite; /*無限に回転　linearでループ間隔を空けない*/
 }
 
 /* .Star2 {
@@ -531,11 +531,11 @@ circle:hover {
   padding-bottom: 24px;
 }
 
-/*----------------FV文字リズ表示---------------------*/
+/*----------------FV文字表示アニメーション---------------------*/
 
 .catch_copy_English {
   display: flex;
-  overflow: hidden;
+  overflow: hidden; /*タグの枠を隠して横スクロールを消せる*/
 }
 
 .catch_copy_English span {
@@ -650,6 +650,7 @@ circle:hover {
   opacity: 5%;
   top: 495px;
   right: -3%;
+  white-space: nowrap; /*改行させない*/
 }
 
 .SNS {
