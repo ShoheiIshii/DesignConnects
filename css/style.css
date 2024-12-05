@@ -209,6 +209,13 @@ circle:hover {
     align-items: center;
     position: relative;
   }
+
+  .hand {
+    padding-left: 30px;
+}
+.catch {
+  padding-left: 30px;
+}
 }
 
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
@@ -290,7 +297,7 @@ circle:hover {
   background: #e2dbd3;
   /*動き*/
   transition: all 0.6s;
-  background-image: url(../images/hamburger.svg); /* 画像のURLを指定 */
+  background-image: url(../images/hamburger.svg); /* 画像のURLを指定※ファイルの場所も指定 */　
   background-repeat: no-repeat; /* 画像の繰り返しを指定 */
   background-position: center bottom; /* 画像の横・縦の位置を指定*/
 }
@@ -522,6 +529,7 @@ circle:hover {
 
 .catch {
   padding-left: 70px;
+  padding-right: 3%;
 }
 
 .catch_copy_English {
@@ -996,7 +1004,10 @@ span {
 .line1 {
   font-weight: 700;
 
-  background-image: url("sample.svg");
+  background-image: url("../images/dot1.svg");　
+
+  /* 画像を読み込むときは、../でimagesフォルダのファイルの場所も指定しないと読み込めない */
+
   background-repeat: repeat-x;
   border-bottom: 2px dotted;
 }
@@ -1004,7 +1015,7 @@ span {
 .line1 {
   font-weight: 700;
 
-  background-image: url("sample.svg");
+  background-image: url("../images/dot1.svg");
   background-repeat: repeat-y;
   border-bottom: 2px dotted;
 }
@@ -2220,7 +2231,17 @@ textarea.c-form__input {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: initial;
+    display: flex;
+    justify-content: center;
   }
+
+
+  .catch_copy_English span {
+    display: block;
+    transform: translate(0, 180%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  }
+  
 
   .back {
     top: 620px;
