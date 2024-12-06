@@ -58,6 +58,9 @@ img {
 body {
   background: #f8f6f0;
   overflow-x: hidden;
+
+  height: 100%;
+  overflow: hidden;
 }
 
 /*-------------------ヘッダー--------------------*/
