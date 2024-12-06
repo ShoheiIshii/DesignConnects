@@ -59,8 +59,8 @@ body {
   background: #f8f6f0;
   overflow-x: hidden;
 
-  height: 100%;
-  overflow: hidden;
+  /* height: 100%; */
+  /* overflow: hidden; */
 }
 
 /*-------------------ヘッダー--------------------*/
@@ -300,7 +300,7 @@ circle:hover {
   background: #e2dbd3;
   /*動き*/
   transition: all 0.6s;
-  background-image: url(../images/hamburger.svg); /* 画像のURLを指定※ファイルの場所も指定 */　
+  background-image: url(../images/hamburger.svg); /* 画像のURLを指定※ファイルの場所も指定 */
   background-repeat: no-repeat; /* 画像の繰り返しを指定 */
   background-position: center bottom; /* 画像の横・縦の位置を指定*/
 }
@@ -1007,7 +1007,7 @@ span {
 .line1 {
   font-weight: 700;
 
-  background-image: url("../images/dot1.svg");　
+  background-image: url("../images/dot1.svg");
 
   /* 画像を読み込むときは、../でimagesフォルダのファイルの場所も指定しないと読み込めない */
 
@@ -2238,13 +2238,11 @@ textarea.c-form__input {
     justify-content: center;
   }
 
-
   .catch_copy_English span {
     display: block;
     transform: translate(0, 180%);
     transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   }
-  
 
   .back {
     top: 620px;

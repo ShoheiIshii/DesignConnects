@@ -717,6 +717,8 @@
             appendDots: $('.Slick_dots'),
         });
 
+
+
         $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
             $("#sp_nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
@@ -1015,7 +1017,7 @@
 
     <script>
         const CLASSNAME = "-visible";
-        const TIMEOUT = 1500;
+        const TIMEOUT = 900;
         const $target = $(".catch_copy_English");
         const $target2 = $(".catch_copy");
 
@@ -1028,6 +1030,31 @@
             }, TIMEOUT)
         }, TIMEOUT);
         // }, TIMEOUT * 2);
+    </script>
+
+
+
+    <script>
+
+
+        $(function () {
+            // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+            $(".openbtn").click(function () {
+
+                // 現在のbodyタグのoverflowスタイルを確認
+                if ($("body").css("overflow") === "hidden") {
+
+                    // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                    $("body").css({ height: "", overflow: "" });
+
+                } else {
+
+                    // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+                    $("body").css({ height: "100%", overflow: "hidden" });
+
+                }
+            });
+        });
     </script>
 
 

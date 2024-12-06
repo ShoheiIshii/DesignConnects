@@ -217,17 +217,8 @@
 
 
     <script>
-        $('.Service_slick').slick({
-            dots: true,
-            infinite: true,
-            // speed: 500,
-            fade: true,
-            cssEase: 'linear',
-            appendArrows: $('.Slick_arrows'),
-            appendDots: $('.Slick_dots'),
-        });
 
-        $("CF").click(function () {//ボタンがクリックされたら
+        $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
             $("#sp_nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
         });
@@ -237,25 +228,24 @@
             $("#sp_nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
         });
 
-        <script>
-            $(function () {
-                // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-                $(".openbtn").click(function () {
+        $(function () {
+            // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+            $(".openbtn").click(function () {
 
-                    // 現在のbodyタグのoverflowスタイルを確認
-                    if ($("body").css("overflow") === "hidden") {
+                // 現在のbodyタグのoverflowスタイルを確認
+                if ($("body").css("overflow") === "hidden") {
 
-                        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
-                        $("body").css({ height: "", overflow: "" });
+                    // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                    $("body").css({ height: "", overflow: "" });
 
-                    } else {
+                } else {
 
-                        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
-                        $("body").css({ height: "100%", overflow: "hidden" });
+                    // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+                    $("body").css({ height: "100%", overflow: "hidden" });
 
-                    }
-                });
-});
+                }
+            });
+        });
     </script>
 
 
