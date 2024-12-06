@@ -210,12 +210,12 @@ circle:hover {
     position: relative;
   }
 
-  .hand {
+  /* .hand {
     padding-left: 30px;
 }
 .catch {
   padding-left: 30px;
-}
+} */
 }
 
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
@@ -522,13 +522,13 @@ circle:hover {
 
 .hand {
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
 }
 
 .catch {
-  padding-left: 70px;
+  padding-left: 5%;
   padding-right: 3%;
 }
 
