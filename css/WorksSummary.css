@@ -165,7 +165,7 @@ body {
   display: flex;
   justify-content: space-between;
   aspect-ratio: 1;
-  /* height: 280px; */
+  height: 280px;
   align-items: center;
 }
 
@@ -199,13 +199,13 @@ body {
   align-items: flex-end;
 }
 
-#Works_Summary h2 {
+#Works_Summary h3 {
   /* margin-top: 6.5%; */
   font-size: 32px;
   font-weight: 700;
   margin-left: 20px;
 }
-#confidential_Summary h2 {
+#confidential_Summary h3 {
   /* margin-top: 6%; */
   font-size: 28px;
   font-weight: 700;
@@ -257,7 +257,7 @@ body {
   display: flex;
   margin-bottom: 32px;
 }
-#Coding_Summary h2 {
+#Coding_Summary h3 {
   margin-top: 28px;
   font-size: 32px;
   font-weight: 700;
@@ -364,13 +364,21 @@ span {
 }
 
 /*----------------slick画像のカルーセル表示-------------------*/
+
+.slick_wrap {
+  position: relative;
+}
+
 .Slick_navigation {
   bottom: 160px;
   height: 40px;
-  position: relative;
+  position: absolute;
   width: 75%;
   margin: 0 auto;
   z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slick-next {
@@ -523,7 +531,7 @@ button[type="button"]:hover {
 /*----------------★SP版 scroll px以下表示★-------------------*/
 
 /* @media (max-width: 367px) {
-  #Works_Summary h2 {
+  #Works_Summary h3 {
     margin-top: 17%;
   }
 } */
@@ -537,7 +545,7 @@ button[type="button"]:hover {
   }
 }
 @media (max-width: 480px) {
-  #Works_Summary h2 {
+  #Works_Summary h3 {
     margin-left: 10px;
   }
 }
@@ -563,7 +571,7 @@ button[type="button"]:hover {
     display: none;
   }
 
-  #Works_Summary h2 {
+  #Works_Summary h3 {
     margin-top: 10%;
   }
 
@@ -615,7 +623,7 @@ button[type="button"]:hover {
     padding-bottom: 80px;
   }
 
-  #confidential_Summary h2 {
+  #confidential_Summary h3 {
   }
 
   .design_text00 {
@@ -630,7 +638,23 @@ button[type="button"]:hover {
   }
 }
 
+@media (max-width: 650px) {
+  .Works_slick .slick-slide {
+    width: 75%;
+  }
+  .Works_slick {
+    height: 400px;
+  }
+  .Works_design img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
 @media (max-width: 950px) {
+  .Works_slick {
+    height: 330px;
+  }
   .Slick_navigation {
     width: 80%;
   }
@@ -668,13 +692,6 @@ button[type="button"]:hover {
 @media (min-width: 2200px) {
   .Slick_navigation {
     width: 60%;
-  }
-}
-
-/* 小さい画面用のスタイル */
-@media (max-width: 650px) {
-  .Works_slick .slick-slide {
-    width: 80%;
   }
 }
 
@@ -948,5 +965,14 @@ button[type="button"]:hover {
 @media screen and (max-width: 650px) {
   .slick-num {
     display: block;
+  }
+}
+
+/*^^^^^^^CSSの順は下にいくほど優先される　メディアクエリの反映にも影響^^^^^^^^*/
+
+@media (max-width: 490px) {
+  .Works_design img {
+    height: 90%;
+    width: 90%;
   }
 }
