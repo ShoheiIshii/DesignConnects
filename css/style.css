@@ -364,6 +364,13 @@ circle:hover {
   display: flex;
 }
 
+/* スマホタッチ効果お試し ontouchstart */
+#sp_nav li a:active {
+  color: #40322d;
+  background-color: #ffffff;
+  border: none;
+}
+
 #sp_nav ul li:hover {
   background-color: #f8f6f0; /* ホバー時の色 */
   border-radius: 50%;
