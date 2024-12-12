@@ -174,9 +174,9 @@ circle:hover {
 }
 
 .Contact:hover {
-  background-color: #47665e; /* ホバー時の色 */
+  background-color: #eb7f4c; /* ここのホバー時の色保留 */
   /* color: #40322d; */
-  box-shadow: 0px 4px 0px 0px #2d453f;
+  box-shadow: 0px 4px 0px 0px #943e29;
   transition: background-color 0.5s;
 }
 
@@ -1657,6 +1657,11 @@ span {
   box-shadow: 0px 4px 0px 0px #2d453f;
 }
 
+.W_Coding:hover {
+  background-color: #eb7f4c; /* ホバー時の色 */
+  transition: background-color 1s ease;
+}
+
 .W_Design {
   align-items: center;
   justify-content: center;
@@ -1669,6 +1674,11 @@ span {
   box-shadow: 0px 4px 0px 0px #2d453f;
 }
 
+.W_Design:hover {
+  background-color: #eb7f4c; /* ホバー時の色 */
+  transition: background-color 1s ease;
+}
+
 .W_Illustration {
   align-items: center;
   justify-content: center;
@@ -1679,6 +1689,11 @@ span {
   font-weight: 700;
   background-color: #47665e;
   box-shadow: 0px 4px 0px 0px #2d453f;
+}
+
+.W_Illustration:hover {
+  background-color: #eb7f4c; /* ホバー時の色 */
+  transition: background-color 1s ease;
 }
 
 /*-------------------About me--------------------*/
