@@ -226,6 +226,13 @@
         $("#sp_nav a").click(function () {//ナビゲーションのリンクがクリックされたら
             $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
             $("#sp_nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+
+            // 現在のbodyタグのoverflowスタイルを確認
+            /*ハンバーガーメニュー固定➁*/
+            if ($("body").css("overflow") === "hidden") {
+                // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                $("body").css({ height: "", overflow: "" });
+            }
         });
 
         $(function () {

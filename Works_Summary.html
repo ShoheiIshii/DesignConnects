@@ -451,9 +451,40 @@
         $("#sp_nav a").click(function () {//ナビゲーションのリンクがクリックされたら
             $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
             $("#sp_nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+
+
+            // 現在のbodyタグのoverflowスタイルを確認
+            /*ハンバーガーメニュー固定➁*/
+            if ($("body").css("overflow") === "hidden") {
+                // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                $("body").css({ height: "", overflow: "" });
+            }
         });
 
 
+    </script>
+
+
+    <!-- /*ハンバーガーメニュー固定➀*/ -->
+    <script>
+        $(function () {
+            // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+            $(".openbtn").click(function () {
+
+                // 現在のbodyタグのoverflowスタイルを確認
+                if ($("body").css("overflow") === "hidden") {
+
+                    // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+                    $("body").css({ height: "", overflow: "" });
+
+                } else {
+
+                    // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+                    $("body").css({ height: "100%", overflow: "hidden" });
+
+                }
+            });
+        });
     </script>
 
 
