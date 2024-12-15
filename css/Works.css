@@ -107,7 +107,7 @@ body {
   border-radius: 50%;
   border-color: #f8f6f0; /* 枠線の色を背景と同じに? */
   /* transition: all 0.5s ease; */
-  transition: background-color 1s ease;
+  transition: background-color 0.7s ease;
 }
 
 .pc_nav ul li:hover a {
@@ -426,7 +426,7 @@ h3 {
   border-radius: 50%;
 }
 
-#pc_nav2 {
+.pc_nav3 {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -438,7 +438,19 @@ h3 {
   box-sizing: border-box;
 }
 
-.Contact2 {
+.pc_nav2 ul li:hover {
+  background-color: #f8f6f0; /* ホバー時の色 */
+  border-radius: 50%;
+  border-color: #f8f6f0; /* 枠線の色を背景と同じに? */
+  /* transition: all 0.5s ease; */
+  transition: background-color 0.7s ease;
+}
+
+.pc_nav2 ul li:hover a {
+  border: none;
+}
+
+#Contact2 {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -735,80 +747,24 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
-  /* .page_top {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #47665e;
-    box-shadow: 0px 4px 0px 0px #2d453f;
-    position: fixed;
-    bottom: 70px;
-    right: 80px;
-    cursor: pointer;
+  #work1-2 {
+    display: none;
+  }
+
+  .Work1_content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 6% 32px 6%;
+    border-bottom: #40322d 1px solid;
+    border-top: #40322d 1px solid;
     align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  } */
-  /* 
-  .page_top p {
-    font-weight: 700;
-    color: #ffffff;
   }
 
-  .top_set {
-    gap: 3px;
-    margin: 0 auto;
+  .Work1_content3 ul {
+    display: flex;
+    flex-direction: column;
   }
-
-  .arrow-icon {
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    width: 12px;
-    height: 12px;
-    border-style: solid;
-    border-width: 4px 4px 0 0;
-    border-color: white;
-    transform: rotate(-45deg);
-  }
-
-  .page_top:after {
-    content: "";
-    content: "TOP";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    background-color: #47665e;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0, 0);
-    transition: transform ease 0.4s;
-  }
-
-  .page_top:hover:after {
-    transform: translate(-50%, -50%) scale(1.1, 1.1);
-  }
-
-  .page_top:hover:before {
-    content: "";
-    position: absolute;
-    z-index: 10;
-    top: 55%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    border-style: solid;
-    border-color: #47665e;
-    border-width: 6px 0 0 6px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    transition: border-color ease 0.1s;
-    border-color: #fff;
-  }
- */
 
   /*--------------TOP---------------*/
 

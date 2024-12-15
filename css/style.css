@@ -2033,7 +2033,7 @@ textarea.c-form__input {
   border-radius: 50%;
 }
 
-#pc_nav2 {
+.pc_nav3 {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -2044,7 +2044,19 @@ textarea.c-form__input {
   border: solid 1px;
   box-sizing: border-box;
 }
-.Contact2 {
+
+.pc_nav2 ul li:hover {
+  background-color: #f8f6f0; /* ホバー時の色 */
+  border-radius: 50%;
+  border-color: #f8f6f0; /* 枠線の色を背景と同じに? */
+  /* transition: all 0.5s ease; */
+  transition: background-color 0.7s ease;
+}
+
+.pc_nav2 ul li:hover a {
+  border: none;
+}
+#Contact2 {
   align-items: center;
   justify-content: center;
   display: flex;
