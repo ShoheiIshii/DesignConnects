@@ -236,12 +236,13 @@ h3 {
   width: 46%;
 }
 .Work1_content2 p {
-  padding-top: 8px;
+  /* padding-top: 8px; */
   padding-left: 16px;
 }
 
 .Work1_subtitle {
   font-weight: 700;
+  padding-top: 8px;
 }
 
 .line1 {
@@ -251,6 +252,11 @@ h3 {
   padding-bottom: 16px;
   background-size: 3px 3px;
   background-position: bottom;
+  padding-top: 8px;
+}
+
+.finish {
+  padding-top: 8px;
 }
 
 .point {
@@ -768,7 +774,8 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 32px 6% 32px 6%;
+    /* padding: 24px 6% 32px 6%; */
+    padding-top: initial;
     border-bottom: #40322d 1px solid;
     border-top: #40322d 1px solid;
     align-items: center;
@@ -811,10 +818,14 @@ h3 {
     padding-left: 8px;
   }
 
+  .Work1_subtitle {
+    padding-top: 32px;
+  }
+
   .Work1_content2 p {
-    padding-top: 8px;
     padding-left: 8px;
     padding-right: 16px;
+    padding-top: 16px;
   }
 
   .Work1_content3 li {
@@ -832,7 +843,12 @@ h3 {
   }
 
   .point {
-    padding: 40px 0 0px 7.7%;
+    padding: 32px 0 0px 7.7%;
+  }
+
+  .line1 {
+    padding-bottom: 24px;
+    padding-top: 16px;
   }
 
   /*--------------TOP---------------*/

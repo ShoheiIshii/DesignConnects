@@ -239,7 +239,7 @@ body {
   margin-bottom: 2px;
 }
 #confidential_Summary span {
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 41px;
 }
 
@@ -254,6 +254,7 @@ body {
   margin-left: 16px;
 }
 #confidential_Summary p {
+  padding-bottom: 5px;
   padding-left: 4%;
 }
 
