@@ -147,7 +147,7 @@ body {
 
 .Works_title1 {
   display: flex;
-  padding: 104px 0 64px 0;
+  padding: 80px 0 64px 0;
   align-items: flex-end;
 }
 
@@ -919,6 +919,10 @@ button[type="button"]:hover {
   border-color: #f8f6f0; /* 枠線の色を背景と同じに? */
   /* transition: all 0.5s ease; */
   transition: background-color 1s ease;
+}
+
+#sp_nav ul.Links:hover {
+  background-color: transparent;
 }
 
 #sp_nav ul li:hover a {

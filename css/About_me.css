@@ -840,14 +840,14 @@ body {
     flex-direction: column;
   }
 
-  .Work1_content2 P{    
+  .Work1_content2 P {
     padding-left: initial;
     padding-right: initial;
   }
 
   .Work1_content3 {
-    padding: initial
-}
+    padding: initial;
+  }
 
   .Works_back_color1 {
     height: 100%;
@@ -884,10 +884,11 @@ body {
     margin: 0 auto;
     background-image: url(../images/dot1.svg);
     background-repeat: repeat-x;
-    background-position:bottom;
+    background-position: bottom;
     background-size: 3px 3px;
     /* padding-top: 8px; */
     padding-bottom: 16px;
+  }
 
   /*--------------TOP---------------*/
 
