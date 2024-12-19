@@ -758,19 +758,68 @@ body {
   .SNS_sp {
     display: none;
   }
+
+  #cafesp {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .Aboutme_title1 {
     flex-direction: column;
     align-items: center;
   }
 
+  .me_illust {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .Aboutme_title2 {
     font-size: 40px;
   }
+
+  .Aboutme_me {
+    flex-direction: column-reverse;
+    gap: initial;
+  }
+
+  .syo {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+
+  .me1 {
+    padding-top: 32px;
+  }
+  .me2 {
+    padding-bottom: 16px;
+  }
+
+  #cafepc {
+    display: none;
+  }
+
+  .Aboutme_cafe {
+    justify-content: center;
+    gap: initial;
+  }
+  .Aboutme_cafe1 {
+    max-width: 300px;
+  }
+  .Aboutme_illust {
+    padding-top: 72px;
+    padding-bottom: 32px;
+  }
   #work1-2 {
     display: none;
+  }
+
+  .Aboutme_content1 {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding-top: 24px;
   }
 
   .Work1_content {
@@ -778,8 +827,27 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-top: initial;
+    padding-left: initial;
     align-items: center;
   }
+
+  .Work1_content1 {
+    width: initial;
+    padding: 0 10%;
+  }
+  .Work1_content2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Work1_content2 P{    
+    padding-left: initial;
+    padding-right: initial;
+  }
+
+  .Work1_content3 {
+    padding: initial
+}
 
   .Works_back_color1 {
     height: 100%;
@@ -789,18 +857,12 @@ body {
     padding-bottom: 80px;
   }
 
-  h3 {
-    padding-left: 7%;
-    padding-right: 7%;
-    text-align: initial;
-    font-size: 24px;
-  }
-
   .long_sentence {
-    padding-top: 40px;
+    padding-top: 32px;
     width: initial;
     padding-bottom: 8px;
-    padding-left: 8px;
+    padding-left: initial;
+    margin: initial;
   }
 
   .Work1_subtitle {
@@ -813,8 +875,19 @@ body {
 
   .line1 {
     padding-bottom: 24px;
-    padding-top: 16px;
+    padding-top: initial;
   }
+
+  .line0 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../images/dot1.svg);
+    background-repeat: repeat-x;
+    background-position:bottom;
+    background-size: 3px 3px;
+    /* padding-top: 8px; */
+    padding-bottom: 16px;
 
   /*--------------TOP---------------*/
 
