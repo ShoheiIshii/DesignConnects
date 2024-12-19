@@ -253,15 +253,21 @@ body {
   padding: 112px 0 0 6%;
   /* align-items: center; */
   max-width: 1010px;
-  width: 100%;
+  /* width: 100%; */
   margin: 0px auto;
 }
+
+.Work1_content1 {
+  width: 100%;
+}
+
 .Work1_content2 {
   display: flex;
   padding-bottom: 48px;
 }
 .Work1_content2 p {
   padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 16px;
 }
 
@@ -478,6 +484,18 @@ body {
   text-align: center;
   padding-bottom: 64px;
   padding-top: 34px;
+}
+
+@media screen and (max-width: 1070px) {
+  .me_illust {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .me_illust {
+    width: 120px;
+  }
 }
 
 /*--------------ハンバーガーメニュー-------------*/
