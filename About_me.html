@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignConnects_Aboutme</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/About_me.css">
     <link rel="stylesheet" type="text/css" href="./css/About_me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="icon" href="./images/favicon.ico">
     <link rel="icon" type="image/png" href="./images/favicon2.png" sizes="192x192">
     <link rel="apple-touch-icon" href="./images/favicon2.png" sizes="180x180">
@@ -144,21 +148,35 @@
                         </p>
                     </div>
 
+                    <div class="travel_sp">
+                        <div class="travel_slick_sp">
+                            <div>
+                                <img src="./images/Aboutme_travel_sp1.png" alt="Aboutme_travel_sp1">
+                                <p class="Aboutme_travel_text">公共建築に、全体予算の1%をアートにあてるスウェーデン</p>
+                                <p class="Aboutme_travel_text2">(ストックホルム中央駅)</p>
+                            </div>
+                            <div>
+                                <img src="./images/Aboutme_travel_sp2.png" alt="Aboutme_travel_sp2">
+                                <p class="Aboutme_travel_text">公共建築に、全体予算の1%をアートにあてるスウェーデン</p>
+                                <p class="Aboutme_travel_text2">(ストックホルムアーランダ空港)</p>
+                            </div>
+                            <div>
+                                <img src="./images/Aboutme_travel_sp3.png" alt="Aboutme_travel_sp3">
+                                <p>ドイツでのドミトリー[共用部屋]</p>
+                            </div>
+                        </div>
 
-                    <div class="Aboutme_travel_sp">
-                        <img src="./images/Aboutme_travel_sp1.png" alt="Aboutme_travel_sp1">
-                        <p class="Aboutme_travel_text">公共建築に、全体予算の1%をアートにあてるスウェーデン</p>
-                        <img src="./images/Aboutme_travel_sp2.png" alt="Aboutme_travel_sp2">
-                        <p class="Aboutme_travel_text">公共建築に、全体予算の1%をアートにあてるスウェーデン</p>
-                        <img src="./images/Aboutme_travel_sp3.png" alt="Aboutme_travel_sp3">
-                        <p>ドイツでのドミトリー（共用部屋）</p>
+                        <div class="Slick_navigation">
+                            <div class="Slick_arrows"></div>
+                            <!-- <div class="Slick_dots"></div> -->
+                        </div>
                     </div>
 
 
                     <div class="Work1_content2">
                         <div class="line0">
                             <div class="Work1_content3">
-                                <p class="Work1_subtitle">大事にしていること</p>
+                                <p class="Work1_subtitle" id="important">大事にしていること</p>
                                 <p class="line1"><span id="line1_content">より良いコミュニケーションをすることです。</span></p>
                             </div>
                         </div>
@@ -179,17 +197,39 @@
             <div>
                 <img src="./images/Aboutme_travel.png" alt="Aboutme_travel">
                 <p class="Aboutme_travel_text">公共建築に、全体予算の1%をアートにあてるスウェーデン</p>
+                <p class="Aboutme_travel_text2">(ストックホルム中央駅:左、ストックホルムアーランダ空港:右)</p>
             </div>
             <div>
                 <img src="./images/Aboutme_travel2.png" alt="Aboutme_travel">
-                <p>ドイツでのドミトリー（共用部屋）</p>
+                <p>ドイツでのドミトリー[共用部屋]</p>
             </div>
         </div>
 
 
-        <div class="Aboutme_illust_sp">
-            <img src="./images/Aboutme_illust_sp1.png" alt="Aboutme_illust_sp1">
+
+        <div class="illust_sp">
+            <div class="illust_slick_sp">
+                <div>
+                    <img src="./images/Aboutme_illust_sp1.png" alt="Aboutme_illust_sp1">
+                    <p class="Aboutme_travel_text">創作イラスト1</p>
+                </div>
+                <div>
+                    <img src="./images/Aboutme_illust_sp2.png" alt="Aboutme_illust_sp1">
+                    <p class="Aboutme_travel_text">創作イラスト2</p>
+                </div>
+                <div>
+                    <img src="./images/Aboutme_illust_sp3.png" alt="Aboutme_illust_sp1">
+                    <p>二次創作イラスト</p>
+                </div>
+            </div>
         </div>
+
+        <div class="illust_sp">
+            <div class="Slick_navigation2">
+                <div class="Slick_arrows"></div>
+            </div>
+        </div>
+
 
 
     </section>
@@ -259,6 +299,7 @@
 
     <script>
 
+
         $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
             $("#sp_nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
@@ -294,8 +335,34 @@
                 }
             });
         });
-    </script>
 
+        $(function () {
+            $('.travel_slick_sp').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 500,
+                // dots: true,
+                infinite: true,
+                fade: true,
+                // cssEase: 'linear',
+                appendArrows: $('.Slick_arrows'),
+                // appendDots: $('.Slick_dots')
+            });
+
+            $('.illust_slick_sp').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 500,
+                // dots: true,
+                infinite: true,
+                fade: true,
+                // cssEase: 'linear',
+                appendArrows: $('.Slick_arrows'),
+                // appendDots: $('.Slick_dots')
+            });
+        })
+
+    </script>
 
 
 
