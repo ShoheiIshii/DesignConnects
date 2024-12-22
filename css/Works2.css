@@ -139,7 +139,6 @@ body {
   max-width: 1000px;
   /* width: 100%; */
   margin: 0 auto;
-  display: flex;
 }
 
 .Works_title1 {
@@ -178,7 +177,7 @@ body {
 } */
 
 .Works_back_color1 {
-  height: 5100px;
+  height: 4400px;
   background-color: rgb(226, 219, 211, 0.7);
   max-width: 1030px;
   /* width: 100%; */
@@ -208,43 +207,6 @@ body {
   /* z-index: 2; */
   /* opacity: 1; */
   border-radius: 10px;
-}
-
-.back_summary {
-  padding-inline-start: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 10%;
-  align-items: center;
-  padding-top: 85px;
-  margin: 0 0 0 85px;
-  justify-content: flex-end;
-}
-
-.back_summary a {
-  border-radius: 50%;
-}
-
-.back_summary2 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 10%;
-  font-weight: 700;
-  background-color: #47665e;
-  box-shadow: 0px 4px 0px 0px #2d453f;
-}
-
-.back_summary2 p {
-  color: #ffffff;
-}
-
-.back_summary2:hover {
-  background-color: #eb7f4c; /* ホバー時の色 */
-  box-shadow: #943e29;
-  transition: background-color 1s ease;
 }
 
 /*-------------------作品詳細--------------------*/
@@ -309,6 +271,17 @@ h3 {
 }
 
 .Work1_content3 li {
+  padding: 0 0 40px 7%;
+  line-height: 1.5;
+}
+.Work1_content4 {
+  padding: 0px 4% 0 4%;
+}
+.Work1_content4 ul {
+  display: flex;
+}
+
+.Work1_content4 li {
   padding: 0 0 134px 7%;
   line-height: 1.5;
 }
@@ -527,12 +500,6 @@ h3 {
   text-align: center;
   padding-bottom: 64px;
   padding-top: 34px;
-}
-
-@media screen and (min-width: 920px) {
-  .back_summary {
-    margin: 0 0 0 55%;
-  }
 }
 
 /*--------------ハンバーガーメニュー-------------*/
@@ -797,6 +764,15 @@ h3 {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .Works_back_color1 {
+    height: 100%;
+  }
+  #work1-1 img {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .Works_title1 {
     flex-direction: column;
@@ -827,6 +803,10 @@ h3 {
   }
 
   .Work1_content3 ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Work1_content4 ul {
     display: flex;
     flex-direction: column;
   }
@@ -884,6 +864,19 @@ h3 {
   }
 
   .Work1_content3 {
+    padding: 24px 4% 16px 4%;
+  }
+  .Work1_content4 li {
+    padding: 0 0 24px 7%;
+  }
+
+  .Work1_content4 ul {
+    display: flex;
+    flex-direction: column;
+    margin: initial;
+  }
+
+  .Work1_content4 {
     padding: 24px 4% 16px 4%;
   }
 
