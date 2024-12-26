@@ -749,9 +749,18 @@ h3 {
   border: none;
 }
 
+#Links_position {
+  position: relative;
+}
 .Links {
   font-weight: 500;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, -50%);
 }
 
 .circle1 {
@@ -788,12 +797,6 @@ h3 {
   background-color: #eb7f4c;
   color: #ffffff;
   box-shadow: 0px 4px 0px 0px #943e29;
-}
-
-.Links {
-  display: flex;
-  align-items: center;
-  padding-top: 27px;
 }
 
 .SNS_sp {

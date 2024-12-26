@@ -387,11 +387,19 @@ circle:hover {
   border: none;
 }
 
+#Links_position {
+  position: relative;
+}
 .Links {
   font-weight: 500;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, -50%);
 }
-
 .circle1 {
   margin-top: 100px;
   /*※ホバー時の色変更で、Seriviceのみpaddingの影響で細長く伸びてしまうため、marginで対応してみる。異常があったら戻す padding-top: 100px; */
@@ -457,18 +465,6 @@ circle:hover {
   background-color: #eb7f4c;
   color: #ffffff;
   box-shadow: 0px 4px 0px 0px #943e29;
-}
-
-.Links {
-  display: flex;
-  align-items: center;
-  padding-top: 27px;
-  /* position: absolute;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  /* position: fixed; */
 }
 
 .SNS_sp {
