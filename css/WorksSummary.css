@@ -183,11 +183,14 @@ body {
 }
 
 .Works_design {
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .Works_design a {
-  border-radius: 50%;
+  display: contents;
+  /* width: 200px;
+  height: 200px; */
 }
+
 .Works_design a img {
   border-radius: 50%;
 }
