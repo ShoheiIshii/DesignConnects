@@ -1869,6 +1869,7 @@ span {
   max-width: 427px;
   padding-top: 24px;
   justify-content: center;
+ 
 }
 
 .c-form__submit2 {
@@ -1897,6 +1898,7 @@ span {
   flex-direction: column;
   padding-top: 8px;
   gap: 8px;
+  font-weight: 900;
 }
 
 button[type="button"].fix_btn {
@@ -1918,6 +1920,7 @@ button[type="submit"] {
   box-shadow: 0px 4px 0px 0px #2d453f;
   flex-direction: column;
   gap: 8px;
+  font-weight: 900;
 }
 
 button[type="submit"].confirm_send {
