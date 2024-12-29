@@ -1011,13 +1011,14 @@ button[type="button"]:hover {
 
 .slick-num {
   position: absolute;
-  top: 85%;
-  left: 40%;
+  /* top: 102%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   font-weight: 700;
   text-align: center;
   padding: 10px;
   color: #40322d;
-  /* background-color: #e2dbd3; */
   display: none;
 }
 
