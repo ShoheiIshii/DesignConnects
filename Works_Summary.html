@@ -135,9 +135,11 @@
                             <a href="./Works7.html#work1"><img src="./images/Design7_Works_Summary.png"
                                     alt="Works_slide1"> </a>
                         </div>
-
                     </div>
-
+                    
+                    <div class="slick-num design-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
                 <div class="Slick_navigation">
                     <div class="Slick_arrows design_arrows"></div>
@@ -169,7 +171,9 @@
                             <img src="./images/Coding3_Works_Summary.png" alt="Works_slide1">
                         </div>
                     </div>
-
+                    <div class="slick-num coding-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
 
 
@@ -208,7 +212,9 @@
                                     alt="Works_slide1"></a>
                         </div>
                     </div>
-
+                    <div class="slick-num illust-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
 
 
@@ -327,10 +333,10 @@
         $(function () {
             $('.design_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".design-num .now-count").text(slick.currentSlide + 1);
+            $(".design-num .all-count").text(slick.slideCount);
+                    // $(this).find("slick-num").insertAfter($(this))
 
                 })
 
@@ -363,21 +369,21 @@
                     ]
                 })
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".design-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
         });
 
 
         $(function () {
             $('.coding_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".coding-num .now-count").text(slick.currentSlide + 1);
+                    $(".coding-num .all-count").text(slick.slideCount);
+                    // $(this).find('slick-num').insertAfter($(this))
 
                 })
                 .slick({
@@ -410,11 +416,11 @@
 
                 })
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".coding-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
 
 
         });
@@ -424,10 +430,10 @@
         $(function () {
             $('.illust_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".illust-num .now-count").text(slick.currentSlide + 1);
+                    $(".illust-num .all-count").text(slick.slideCount);
+                    // $(this).find('slick-num').insertAfter($(this))
 
                 })
 
@@ -461,11 +467,11 @@
                 })
 
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".illust-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
         });
 
 
@@ -475,8 +481,10 @@
   slickNums.forEach((slickNum) => {
     if (window.innerWidth <= 360) {
       slickNum.style.top = '85%'; // 360px以下の場合
-    } else if (window.innerWidth <= 420) {
+    } else if (window.innerWidth <= 440) {
       slickNum.style.top = '90%'; 
+    } else if (window.innerWidth <= 470) {
+      slickNum.style.top = '93%'; 
     } else if (window.innerWidth <= 550) {
       slickNum.style.top = '96%';
     } else if (window.innerWidth <= 650) {
