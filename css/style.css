@@ -1802,6 +1802,7 @@ span {
   box-shadow: #943e29;
   transition: background-color 1s ease;
 }
+/* background-color: rgba(235, 127, 76, 1); */
 
 /*-------------------Contact--------------------*/
 /* 初期状態で確認画面非表示 */
@@ -1898,7 +1899,7 @@ span {
   flex-direction: column;
   padding-top: 8px;
   gap: 8px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 button[type="button"].fix_btn {
@@ -1920,7 +1921,7 @@ button[type="submit"] {
   box-shadow: 0px 4px 0px 0px #2d453f;
   flex-direction: column;
   gap: 8px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 button[type="submit"].confirm_send {
