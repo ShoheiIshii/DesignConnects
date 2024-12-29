@@ -19,8 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="icon" href="./images/favicon.ico">
-    <link rel="icon" type="image/png" href="./images/favicon2.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="./images/favicon2.png" sizes="180x180">
 </head>
 
 <body>
@@ -34,7 +32,7 @@
             </div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="./index.html#Works">Works</a></li>
+                    <li><a href="./index.html#Service">Service</a></li>
                     <li><a href="./index.html#Skill">Skill</a></li>
                     <li><a href="./index.html#Works">Works</a></li>
                     <li><a href="./index.html#About me">About me</a></li>
@@ -470,6 +468,33 @@
                 })
         });
 
+
+        function adjustSlickNumPosition() {
+  const slickNums = document.querySelectorAll('.slick-num');
+
+  slickNums.forEach((slickNum) => {
+    if (window.innerWidth <= 360) {
+      slickNum.style.top = '85%'; // 360px以下の場合
+    } else if (window.innerWidth <= 420) {
+      slickNum.style.top = '90%'; 
+    } else if (window.innerWidth <= 550) {
+      slickNum.style.top = '96%';
+    } else if (window.innerWidth <= 650) {
+      slickNum.style.top = '102%';
+    } else {
+      slickNum.style.top = '50%'; // 通常時
+      slickNum.style.transform = 'translate(-50%,-50%)'; // 縦中央
+    }
+  });
+}
+
+window.addEventListener('resize', adjustSlickNumPosition);
+adjustSlickNumPosition(); // 初期実行
+
+
+
+
+        
 
         $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
