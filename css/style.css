@@ -667,7 +667,7 @@ circle:hover {
   font-weight: 500;
   opacity: 5%;
   top: 140px;
-  /* left: -40px; */
+  /* left: -40px; ※back2についてipadで横スクロールできてしまうため、英字の端がはみ出すデザインを辞めた backは問題なかったがback2に合わせた*/
 }
 
 .back2 {
@@ -678,7 +678,7 @@ circle:hover {
   opacity: 5%;
   top: 495px;
   right: 0%;
-  /* right: -3%; */
+  /* right: -3%; ※ipadで横スクロールできてしまうため、英字の端がはみ出すデザインを辞めた*/
   white-space: nowrap; /*改行させない*/
 }
 
