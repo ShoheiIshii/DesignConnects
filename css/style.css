@@ -667,7 +667,7 @@ circle:hover {
   font-weight: 500;
   opacity: 5%;
   top: 140px;
-  left: -40px;
+  /* left: -40px; */
 }
 
 .back2 {
@@ -677,7 +677,8 @@ circle:hover {
   font-weight: 500;
   opacity: 5%;
   top: 495px;
-  right: -3%;
+  right: 0%;
+  /* right: -3%; */
   white-space: nowrap; /*改行させない*/
 }
 
@@ -1870,7 +1871,6 @@ span {
   max-width: 427px;
   padding-top: 24px;
   justify-content: center;
- 
 }
 
 .c-form__submit2 {
