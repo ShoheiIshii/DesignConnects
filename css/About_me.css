@@ -786,6 +786,20 @@ body {
   #cafesp {
     display: none;
   }
+
+  .slick-next {
+    right: 25px;
+  }
+  .slick-next:before {
+    content: "";
+  }
+
+  .slick-prev {
+    left: 25px;
+  }
+  .slick-prev:before {
+    content: "";
+  }
 }
 
 @media screen and (max-width: 850px) {
