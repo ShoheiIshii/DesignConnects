@@ -19,8 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="icon" href="./images/favicon.ico">
-    <link rel="icon" type="image/png" href="./images/favicon2.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="./images/favicon2.png" sizes="180x180">
 </head>
 
 <body>
@@ -34,7 +32,7 @@
             </div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="./index.html#Works">Works</a></li>
+                    <li><a href="./index.html#Service">Service</a></li>
                     <li><a href="./index.html#Skill">Skill</a></li>
                     <li><a href="./index.html#Works">Works</a></li>
                     <li><a href="./index.html#About me">About me</a></li>
@@ -137,9 +135,11 @@
                             <a href="./Works7.html#work1"><img src="./images/Design7_Works_Summary.png"
                                     alt="Works_slide1"> </a>
                         </div>
-
                     </div>
-
+                    
+                    <div class="slick-num design-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
                 <div class="Slick_navigation">
                     <div class="Slick_arrows design_arrows"></div>
@@ -171,7 +171,9 @@
                             <img src="./images/Coding3_Works_Summary.png" alt="Works_slide1">
                         </div>
                     </div>
-
+                    <div class="slick-num coding-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
 
 
@@ -210,7 +212,9 @@
                                     alt="Works_slide1"></a>
                         </div>
                     </div>
-
+                    <div class="slick-num illust-num">
+                        <span class="now-count"></span> / <span class="all-count"></span>
+                    </div>
                 </div>
 
 
@@ -244,7 +248,7 @@
                         <p class="line1"><span id="subtitle">Design</span><span id="subtitle2">※会社内にて制作案件のため</span></p>
                     </div>
                     <p class="confidential_text2">ブランド紹介のブックレット(17ページ) / 広告チラシ / バナー </p>
-                    <p class="confidential_text2">広告野立看板(商業施設掲出など 最大3m角) / 名刺 etc... </p>
+                    <p class="confidential_text2">広告野立看板(商業施設掲出など 最大3m角) / 店舗ファサード7件（電飾袖看板、ガラス面、チャンネル文字など） etc... </p>
                 </div>
 
                 <div class="confidential2">
@@ -329,10 +333,10 @@
         $(function () {
             $('.design_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".design-num .now-count").text(slick.currentSlide + 1);
+            $(".design-num .all-count").text(slick.slideCount);
+                    // $(this).find("slick-num").insertAfter($(this))
 
                 })
 
@@ -365,21 +369,21 @@
                     ]
                 })
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".design-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
         });
 
 
         $(function () {
             $('.coding_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".coding-num .now-count").text(slick.currentSlide + 1);
+                    $(".coding-num .all-count").text(slick.slideCount);
+                    // $(this).find('slick-num').insertAfter($(this))
 
                 })
                 .slick({
@@ -412,11 +416,11 @@
 
                 })
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".coding-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
 
 
         });
@@ -426,10 +430,10 @@
         $(function () {
             $('.illust_slick')
                 .on("init", function (event, slick) {
-                    $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-                    $(".now-count").text(slick.currentSlide + 1);
-                    $(".all-count").text(slick.slideCount);
-                    $(this).find('slick-num').insertAfter($(this))
+                    // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
+                    $(".illust-num .now-count").text(slick.currentSlide + 1);
+                    $(".illust-num .all-count").text(slick.slideCount);
+                    // $(this).find('slick-num').insertAfter($(this))
 
                 })
 
@@ -463,13 +467,42 @@
                 })
 
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-                    $(".now-count").text(nextSlide + 1);
+                    $(".illust-num .now-count").text(nextSlide + 1);
                 })
-                .on("setPosition", function () {
-                    $(this).find('.slick-num').insertAfter($(this))
-                })
+                // .on("setPosition", function () {
+                //     $(this).find('.slick-num').insertAfter($(this))
+                // })
         });
 
+
+        function adjustSlickNumPosition() {
+  const slickNums = document.querySelectorAll('.slick-num');
+
+  slickNums.forEach((slickNum) => {
+    if (window.innerWidth <= 360) {
+      slickNum.style.top = '85%'; // 360px以下の場合
+    } else if (window.innerWidth <= 440) {
+      slickNum.style.top = '90%'; 
+    } else if (window.innerWidth <= 470) {
+      slickNum.style.top = '93%'; 
+    } else if (window.innerWidth <= 550) {
+      slickNum.style.top = '96%';
+    } else if (window.innerWidth <= 650) {
+      slickNum.style.top = '102%';
+    } else {
+      slickNum.style.top = '50%'; // 通常時
+      slickNum.style.transform = 'translate(-50%,-50%)'; // 縦中央
+    }
+  });
+}
+
+window.addEventListener('resize', adjustSlickNumPosition);
+adjustSlickNumPosition(); // 初期実行
+
+
+
+
+        
 
         $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
