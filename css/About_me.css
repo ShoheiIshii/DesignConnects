@@ -776,6 +776,7 @@ body {
   top: 16px;
   left: 16px;
   position: absolute;
+  z-index: 99;
 }
 
 @media screen and (min-width: 851px) {

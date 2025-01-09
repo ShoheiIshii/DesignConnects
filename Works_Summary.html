@@ -49,10 +49,12 @@
             <nav id="sp_nav">
                 <div class="SNS_sp">
                     <div class="=instagram">
-                        <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                        <a href="https://www.instagram.com/syo_connect.design?igsh=MTJxY2FxZ2NkZmZm"><img
+                                src="./images/instagram2.svg" alt="instagram"></a>
                     </div>
                     <div class="X">
-                        <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                        <a href="https://x.com/syodesign_fun?t=wWlnhyi8K-8M_aENCtFZ8g&s=09"><img src="./images/X2.svg"
+                                alt="X"></a>
                     </div>
                 </div>
 
@@ -136,7 +138,7 @@
                                     alt="Works_slide1"> </a>
                         </div>
                     </div>
-                    
+
                     <div class="slick-num design-num">
                         <span class="now-count"></span> / <span class="all-count"></span>
                     </div>
@@ -311,10 +313,12 @@
 
             <div class="SNS2">
                 <div class="=instagram">
-                    <a href="https://www.instagram.com/"> <img src="./images/instagram2.svg" alt="instagram"></a>
+                    <a href="https://www.instagram.com/syo_connect.design?igsh=MTJxY2FxZ2NkZmZm">
+                        <img src="./images/instagram2.svg" alt="instagram"></a>
                 </div>
                 <div class="X">
-                    <a href="https://x.com/?lang=ja"> <img src="./images/X2.svg" alt="X"></a>
+                    <a href="https://x.com/syodesign_fun?t=wWlnhyi8K-8M_aENCtFZ8g&s=09"> <img src="./images/X2.svg"
+                            alt="X"></a>
                 </div>
             </div>
 
@@ -335,7 +339,7 @@
                 .on("init", function (event, slick) {
                     // $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
                     $(".design-num .now-count").text(slick.currentSlide + 1);
-            $(".design-num .all-count").text(slick.slideCount);
+                    $(".design-num .all-count").text(slick.slideCount);
                     // $(this).find("slick-num").insertAfter($(this))
 
                 })
@@ -371,9 +375,9 @@
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
                     $(".design-num .now-count").text(nextSlide + 1);
                 })
-                // .on("setPosition", function () {
-                //     $(this).find('.slick-num').insertAfter($(this))
-                // })
+            // .on("setPosition", function () {
+            //     $(this).find('.slick-num').insertAfter($(this))
+            // })
         });
 
 
@@ -418,9 +422,9 @@
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
                     $(".coding-num .now-count").text(nextSlide + 1);
                 })
-                // .on("setPosition", function () {
-                //     $(this).find('.slick-num').insertAfter($(this))
-                // })
+            // .on("setPosition", function () {
+            //     $(this).find('.slick-num').insertAfter($(this))
+            // })
 
 
         });
@@ -469,40 +473,40 @@
                 .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
                     $(".illust-num .now-count").text(nextSlide + 1);
                 })
-                // .on("setPosition", function () {
-                //     $(this).find('.slick-num').insertAfter($(this))
-                // })
+            // .on("setPosition", function () {
+            //     $(this).find('.slick-num').insertAfter($(this))
+            // })
         });
 
 
         function adjustSlickNumPosition() {
-  const slickNums = document.querySelectorAll('.slick-num');
+            const slickNums = document.querySelectorAll('.slick-num');
 
-  slickNums.forEach((slickNum) => {
-    if (window.innerWidth <= 360) {
-      slickNum.style.top = '85%'; // 360px以下の場合
-    } else if (window.innerWidth <= 440) {
-      slickNum.style.top = '90%'; 
-    } else if (window.innerWidth <= 470) {
-      slickNum.style.top = '93%'; 
-    } else if (window.innerWidth <= 550) {
-      slickNum.style.top = '96%';
-    } else if (window.innerWidth <= 650) {
-      slickNum.style.top = '102%';
-    } else {
-      slickNum.style.top = '50%'; // 通常時
-      slickNum.style.transform = 'translate(-50%,-50%)'; // 縦中央
-    }
-  });
-}
+            slickNums.forEach((slickNum) => {
+                if (window.innerWidth <= 360) {
+                    slickNum.style.top = '85%'; // 360px以下の場合
+                } else if (window.innerWidth <= 440) {
+                    slickNum.style.top = '90%';
+                } else if (window.innerWidth <= 470) {
+                    slickNum.style.top = '93%';
+                } else if (window.innerWidth <= 550) {
+                    slickNum.style.top = '96%';
+                } else if (window.innerWidth <= 650) {
+                    slickNum.style.top = '102%';
+                } else {
+                    slickNum.style.top = '50%'; // 通常時
+                    slickNum.style.transform = 'translate(-50%,-50%)'; // 縦中央
+                }
+            });
+        }
 
-window.addEventListener('resize', adjustSlickNumPosition);
-adjustSlickNumPosition(); // 初期実行
-
-
+        window.addEventListener('resize', adjustSlickNumPosition);
+        adjustSlickNumPosition(); // 初期実行
 
 
-        
+
+
+
 
         $(".openbtn").click(function () {//ボタンがクリックされたら
             $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
