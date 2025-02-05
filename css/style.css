@@ -1247,17 +1247,34 @@ span {
   padding-bottom: 0px;
 }
 
-.Skill_items h3 {
-  font-size: 2.63vw;
-  font-weight: 700;
-  padding: 32px 150px 16px 26px;
+@media screen and (min-width: 1300px) {
+  .Skill_items h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 32px 150px 16px 26px;
+  }
+
+  .items_list4 h3 {
+    width: 112px;
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 78px 4.6% 78px 14.8%;
+  }
 }
 
-.items_list4 h3 {
-  width: 112px;
-  font-size: 2.63vw;
-  font-weight: 700;
-  padding: 78px 4.6% 78px 14.8%;
+@media screen and (max-width: 1299px) {
+  .Skill_items h3 {
+    font-size: 2.63vw;
+    font-weight: 700;
+    padding: 32px 150px 16px 26px;
+  }
+
+  .items_list4 h3 {
+    width: 112px;
+    font-size: 2.63vw;
+    font-weight: 700;
+    padding: 78px 4.6% 78px 14.8%;
+  }
 }
 
 .items_list1 {
